@@ -1,0 +1,349 @@
+main {
+    margin: 0 !important;
+    padding: 0 !important;
+    top: 0 !important;
+}
+
+.loading__page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: ".""."".";
+    height: 100vh;
+}
+
+.lines__sup div {
+    flex-shrink: 0;
+    border-radius: 0px 0px 20px 20px;
+    animation: cardanimation 1.5s;
+}
+
+.loading__page a {
+    display: inline-block;
+    transform: rotate(90deg);
+    transform-origin: center center;
+    color: white !important;
+    font-weight: 800;
+    font-size: .8rem;
+}
+
+.lines__inf div {
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+    animation: cardanimation 1.5s;
+}
+
+.lines__sup {
+    height: 271px;
+    display: grid;
+    grid-template-columns: 1fr 17px 1fr 17px 1fr 17px 1fr 17px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". l1 . l2 . l3 . l4 .";
+}
+
+.lines__inf {
+    height: 321px;
+    display: grid;
+    grid-template-columns: 1fr 17px 1fr 17px 1fr 17px 1fr 17px 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". l1_d . l2_d . l3_d . l4_d .";
+}
+
+.line__1 {
+    width: 17px;
+    height: 200px;
+    background-image: linear-gradient(#b3194200 10%, #B31942 90%);
+    grid-area: l1;
+}
+
+.line__2 {
+    width: 17px;
+    height: 219px;
+    background-image: linear-gradient(#0a316100 10%, #08466E 90%);
+    grid-area: l2;
+}
+
+.line__3 {
+    width: 17px;
+    height: 271px;
+    background-image: linear-gradient(#b3194200 10%, #B31942 90%);
+    grid-area: l3;
+}
+
+.line__4 {
+    width: 17px;
+    height: 202px;
+    background-image: linear-gradient(#0a316100 10%, #08466E 90%);
+    grid-area: l4;
+}
+
+.line__1__down {
+    width: 17px;
+    height: 321px;
+    background-image: linear-gradient(to top, #b3194200 10%, #B31942 90%);
+    grid-area: l1_d;
+}
+
+.line__2__down {
+    width: 17px;
+    height: 237px;
+    margin-top: 84px;
+    background-image: linear-gradient(to top, #0a316100 10%, #08466E 90%);
+    grid-area: l2_d;
+}
+
+.line__3__down {
+    width: 17px;
+    height: 200px;
+    margin-top: 121px;
+    background-image: linear-gradient(to top, #b3194200 10%, #B31942 90%);
+    grid-area: l3_d;
+}
+
+.line__4__down {
+    width: 17px;
+    height: 286px;
+    margin-top: 35px;
+    background-image: linear-gradient(to top, #0a316100 10%, #08466E 90%);
+    grid-area: l4_d;
+}
+
+@keyframes cardanimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* HOME PAGE - TOP */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar div {
+    width: 8cm;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu .active {
+    text-decoration: underline;
+}
+
+.superiore {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    background: linear-gradient(to top, #ffffff79 1%, #ffffff 99%), url('../../../assets/immagini/image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 1920px; */
+}
+
+.su__left {
+    padding: 220px 0px 200px 200px;
+}
+
+.menu {
+    margin-left: 10vw;
+}
+
+.nav__contatti {
+    margin-right: 10vw;
+}
+
+.su__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.su__right__anno {
+    position: absolute;
+    transform: rotate(-20deg);
+    margin: -30px 0px 0px -40px;
+}
+
+.su__right__isadesso {
+    z-index: 99;
+    text-align: center;
+    position: relative;
+}
+
+.su__left__3 {
+    margin-top: 60px;
+}
+
+
+/* SEZIONE 2 */
+
+.sezione__uno__sezione__immagini {
+    width: 338px;
+    height: 338px;
+    flex-shrink: 0;
+    border-radius: 200px;
+    background: url("../../../assets/immagini/grad-guide-overview-hs-grad-ceremony-default-section-2.jpg"), lightgray 50% / cover no-repeat;
+}
+
+.sezione__uno__sezione__immagini .immagine__uno {
+    width: 338px;
+    height: 338px;
+    flex-shrink: 0;
+    border-radius: 200px;
+    background: url("../../../assets/immagini/grad-guide-overview-hs-grad-ceremony-default-section-2.jpg"), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    margin-bottom: -2cm;
+    position: sticky;
+}
+
+.sezione__uno__sezione__immagini .immagine__due {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 200px;
+    background: url("../../../assets/immagini/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg"), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: sticky;
+    margin-left: 1cm;
+    z-index: 1;
+}
+
+.sezione__uno__sezione__immagini .immagine__tre {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 200px;
+    background: url("../../../assets/immagini/learning.jpg"), lightgray 50% / cover no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    position: sticky;
+    margin-left: -5cm;
+    margin-top: -3cm;
+}
+
+.sezione__uno {
+    padding: 200px 300px 300px 300px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ". .";
+}
+
+#sezione__due {
+    padding: 0px 300px 300px 300px;
+}
+
+#sezione__due__interno__uno {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    padding-top: 20px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+#sezione__due__interno__uno ul li {
+    margin: 50px 0 50px 0;
+    color: #08456e00;
+}
+
+.sezione__uno .sezione__uno__descrizione h2 {
+    width: 400px;
+}
+
+.sezione__uno .sezione__uno__descrizione p {
+    width: 310px;
+    margin-bottom: 30px;
+    overflow-y: scroll;
+}
+
+.sezione__due__interno__due section {
+    height: fit-content;
+    display: flex;
+    padding: 200px 0px 200px 200px;
+}
+
+.sezione__due__interno__due h1 {
+    margin: 0;
+}
+
+.sezione__due__interno__due p {
+    margin-right: 70px;
+    margin: 0px 70px 50px 0;
+}
+
+.sezione__due__interno__due__sezione__uno div {
+    width: 450px;
+    height: 600px;
+    margin-right: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.see__more {
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 3px solid #b319427c;
+    cursor: pointer;
+}
+
+.see__more svg {
+    margin-top: 4px;
+    margin-left: 4px;
+    position: absolute;
+    z-index: 1;
+}
+
+.see__more:hover {
+    background-color: #b31942;
+    border: 3px solid #b31942;
+}
+
+.see__more:hover h4 {
+    padding-left: 70px;
+}
+
+.see__more h4 {
+    position: sticky;
+    z-index: 99;
+    width: 4cm;
+    padding-left: 15px;
+    margin: 15px 15px 15px 0;
+}

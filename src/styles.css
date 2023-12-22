@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), url(./assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "AlumniSansCollegiateOne-Regular";
+    src: local("AlumniSansCollegiateOne-Regular"), url(./assets/fonts/Alumni_Sans_Collegiate_One/AlumniSansCollegiateOne-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "OpenSans-VariableFont_wdth,wght";
+    src: local("OpenSans-VariableFont_wdth,wght"), url(./assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf) format("truetype");
+}
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    padding: 0 !important;
+    top: 0 !important;
+}
+
+a,
+p,
+span,
+h2,
+h3,
+h4,
+h5,
+li {
+    font-family: "OpenSans-VariableFont_wdth,wght";
+}
+
+li {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+p,
+a,
+span {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Montserrat";
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 800;
+}
+
+* {
+    color: #08466E;
+    transition-duration: .5s;
+}
+
+.logo {
+    font-family: "Montserrat";
+}
+
+.h1__large {
+    font-size: 5rem;
+}
+
+.h1__medium {
+    font-size: 4rem;
+}
+
+.h1__little {
+    font-size: 2rem;
+}
+
+.button__red {
+    padding: 0px 25px 0px 25px;
+    background: #B31942;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+.button__red__out {
+    margin-left: -6px;
+    padding: 4px 4px 4px 4px;
+    background: #b3194200;
+    border-radius: 40px;
+    border: 2px solid #b3194200;
+    cursor: pointer;
+}
+
+.button__red__out:hover {
+    border: 2px solid #B31942;
+}
+
+.button__red h2,
+h3 {
+    color: #ffffff !important;
+}

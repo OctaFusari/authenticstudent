@@ -1,0 +1,206 @@
+<div class="loading__page" style="display: none;">
+    <div class="lines__sup">
+        <div class="line__1">
+            <a style="margin-top:158px; margin-left: -10px;">Miami</a>
+        </div>
+        <div class="line__2">
+            <a style="margin-top:174px;margin-left: -14px;">Chicago</a>
+        </div>
+        <div class="line__3">
+            <a style="margin-top:214px;margin-left: -25px;">LosAngeles</a>
+        </div>
+        <div class="line__4">
+            <a style="margin-top:152px;margin-left: -20px;">NewYork</a>
+        </div>
+    </div>
+    <div style="text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;">
+        <div>
+            <h1 class="h1__little logo">Authentic</h1>
+            <h1 class="h1__little logo">Student</h1>
+        </div>
+    </div>
+    <div class="lines__inf">
+        <div class="line__1__down">
+            <a style="margin-top:28px;margin-left: -17px;">Houston</a>
+
+        </div>
+        <div class="line__2__down">
+            <a style="margin-top:40px;margin-left: -27px;">Washington</a>
+        </div>
+        <div class="line__3__down">
+
+            <a style="margin-top:40px;margin-left: -30px;">SanFrancisco</a>
+        </div>
+        <div class="line__4__down">
+
+            <a style="margin-top:22px;margin-left: -10px;">Dallas</a>
+        </div>
+    </div>
+
+</div>
+<main>
+    <div class="navbar">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a routerLink="/home" routerLinkActive="active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="14" viewBox="0 0 35 14" fill="none">
+                        <path d="M35 2C35 3.10457 34.1046 4 33 4L2 4C0.895432 4 0 3.10457 0 2C0 0.895431 0.895432 0 2 0L33 0C34.1046 0 35 0.895431 35 2Z" fill="#08466E"/>
+                        <path d="M35 12C35 13.1046 34.1046 14 33 14L2 14C0.895432 14 0 13.1046 0 12C0 10.8954 0.895432 10 2 10L33 10C34.1046 10 35 10.8954 35 12Z" fill="#08466E"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="logo">
+            <!-- Add your logo image or text here -->
+            <img src="../../../assets/immagini/logoas2 (11).png" alt="Logo">
+        </div>
+        <div class="nav__contatti" style="text-align: right;">
+            <h4 style="margin: 4px;">authenticstudent.it&#64;gmail.com</h4>
+            <h4 style="margin: 4px;">+39 3924821202</h4>
+        </div>
+    </div>
+    <div class="superiore">
+        <div class="su__left">
+            <div class="su__left__1">
+                <h1 class="h1__large" style="margin-bottom: 20px;">Il tuo futuro</h1>
+                <h1 class="h1__large" style="margin-top: 0">La nostra guida</h1>
+
+            </div>
+            <div class="su__left__2">
+                <h2 style="color: #B31942;">
+                    Vivi il tuo sogno americano con noi
+                </h2>
+            </div>
+            <div class="su__left__3">
+                <button class="button__red__out">
+                <button class="button__red">
+                    <h2>Scopri di più</h2>
+                </button></button>
+            </div>
+        </div>
+        <div class="su__right">
+            <div style="text-align: center;">
+                <div class="su__right__anno" style="text-align: center;">
+                    <h1 class="h1__large" style="color: #b3194269;z-index: 0;margin:0">2023/</h1>
+                    <h1 class="h1__large" style="color: #b3194269;z-index: 0;margin:0">2024</h1>
+                </div>
+                <div class="su__right__isadesso">
+                    <h1>Iscriviti</h1>
+                    <h1>adesso!</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="centro">
+        <div class="sezione__uno">
+            <div>
+                <h1 class="h1__large" style="margin-bottom: 20px;">Chi siamo?</h1>
+                <div class="sezione__uno__descrizione">
+                    <h2 style="color: #B31942;">la tua guida personalizzata per un percorso accademico di successo negli Stati Uniti</h2>
+                    <p>Scopri opportunità straordinarie per studenti italiani desiderosi di eccellere negli studi. Offriamo programmi su misura per scuola superiore e università, adattati alle esigenze di ogni studente.</p>
+                    <button class="button__red__out">
+                        <button class="button__red">
+                            <h3>Leggi di più</h3>
+                        </button></button>
+                </div>
+            </div>
+            <div class="sezione__uno__sezione__immagini">
+                <div class="immagine__uno"></div>
+                <div class="immagine__due"></div>
+                <div class="immagine__tre"></div>
+            </div>
+        </div>
+        <div id="sezione__due">
+            <div id="sezione__due__interno__uno">
+                <ul>
+                    <li (click)="scroll(opzione__uno)" id="opzione__uno__menu">
+                        Scuola superiore
+                    </li>
+                    <li (click)="scroll(opzione__due)" id="opzione__due__menu">
+                        Community College
+                    </li>
+                    <li (click)="scroll(opzione__tre)" id="opzione__tre__menu">
+                        University
+                    </li>
+                    <li (click)="scroll(opzione__quattro)" id="opzione__quattro__menu">
+                        Master / Magistrale
+                    </li>
+                </ul>
+            </div>
+            <div class="sezione__due__interno__due">
+                <section id="opzione__uno" #opzione__uno>
+                    <div class="sezione__due__interno__due__sezione__uno">
+                        <div style="background-image: url('../../../assets/immagini/how-hosting-an-exchange-student-makes-you-fall-in-love-with-the-world.jpg')"></div>
+                    </div>
+                    <div>
+                        <h1 class="h1__medium">Scuola superiore</h1>
+                        <h2 style="color: #B31942;">Persorso di scuola superiore negli USA con famiglia d'accoglienza americana.</h2>
+                        <p>Frequenta una scuola superiore negli USA vivendo con una famiglia americana! Il programma offre agli studenti l'opportunità di immergersi nella cultura americana, diventare bilingui e sviluppare competenze accademiche e sociali.
+                            Con il supporto costante del nostro team e della famiglia d'accoglienza, garantiamo un anno scolastico indimenticabile in istituti rinomati.</p>
+                        <div class="see__more">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                            <h4>Mostra dettagli</h4>
+                        </div>
+                    </div>
+                </section>
+                <section id="opzione__due" #opzione__due>
+                    <div class="sezione__due__interno__due__sezione__uno">
+                        <div style="background-image: url('../../../assets/immagini/Cómo obtener el visado ESTA para Estados Unidos.jpg')"></div>
+                    </div>
+                    <div>
+                        <h1 class="h1__medium">Community College</h1>
+                        <h2 style="color: #B31942;">Costo 5 volte inferiore rispetto all'iscrizione diretta all'università dopo la scuola superiore.</h2>
+                        <p>Ottenere un certificato BAC+2, noto come "certificate", nella disciplina preferita, può facilitare l'ingresso nel mondo del lavoro o il trasferimento a un'università americana per un BAC+4. Scelta comune tra gli studenti americani,
+                            i community college offrono un notevole risparmio rispetto all'iscrizione diretta all'università, garantendo anche una base educativa solida per un futuro di successi e opportunità.</p>
+
+                        <div class="see__more">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                            <h4>Mostra dettagli</h4>
+                        </div>
+                    </div>
+                </section>
+                <section id="opzione__tre" #opzione__tre>
+                    <div class="sezione__due__interno__due__sezione__uno">
+                        <div style="background-image: url('../../../assets/immagini/degree.jpg')"></div>
+                    </div>
+                    <div>
+                        <h1 class="h1__medium">University</h1>
+                        <h2 style="color: #B31942;">Scopri un'esperienza di apprendimento eccezionale grazie al programma dell'Università Americana!</h2>
+                        <p>Ottieni un diploma americano di livello BAC+4 nella tua disciplina preferita, aprendo la strada a opportunità lavorative negli Stati Uniti. Il nostro programma non solo ti offre una formazione di alto livello, ma ti permette di
+                            immergerti nella vibrante cultura americana. Con docenti qualificati, strutture innovative e l'opportunità di interagire con studenti provenienti da tutto il mondo, l'Università Americana ti offre molto più di una laurea. </p>
+
+                        <div class="see__more">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                            <h4>Mostra dettagli</h4>
+                        </div>
+                    </div>
+                </section>
+                <section id="opzione__quattro" #opzione__quattro>
+                    <div class="sezione__due__interno__due__sezione__uno">
+                        <div style="background-image: url('../../../assets/immagini/graduation__hats.jpg')"></div>
+                    </div>
+                    <div>
+                        <h1 class="h1__medium">Master / Magistrale</h1>
+                        <h2 style="color: #B31942;">Preparati a dello studio stimolante e a raggiungere nuove vette nella tua carriera.</h2>
+                        <p>Se possiedi una laurea triennale o BAC+4 e hai il sogno di ottenere un Master, noi ti offriamo un percorso accademico che non solo arricchirà il tuo curriculum, ma ti offrirà l'occasione di apprendere una nuova lingua e immergerti
+                            in una cultura affascinante. Creerai connessioni significative, svilupperai una prospettiva globale e aprirai nuove opportunità professionali, preparandoti a un periodo di studio stimolante e al raggiungimento di nuove vette
+                            nella tua carriera.</p>
+
+                        <div class="see__more">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                            <h4>Mostra dettagli</h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div style="height: 100vh;">
+
+        </div>
+    </div>
+</main>
