@@ -11,6 +11,10 @@ import { MasterComponent } from './components/master/master.component';
 import { ChiSiamoComponent } from './components/chi-siamo/chi-siamo.component';
 import { PersonalizzaProgettoComponent } from './components/personalizza-progetto/personalizza-progetto.component';
 import { TestimonianzeComponent } from './components/testimonianze/testimonianze.component';
+import { RefundPolicyComponent } from './components/policies/refund-policy/refund-policy.component';
+import { TermsOfServiceComponent } from './components/policies/terms-of-service/terms-of-service.component';
+import { LegalNoticeComponent } from './components/policies/legal-notice/legal-notice.component';
+import { PrivacyPolicyComponent } from './components/policies/privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,12 @@ import { TestimonianzeComponent } from './components/testimonianze/testimonianze
     MasterComponent,
     ChiSiamoComponent,
     PersonalizzaProgettoComponent,
-    TestimonianzeComponent
+    TestimonianzeComponent,
+    RefundPolicyComponent,
+    TermsOfServiceComponent,
+    LegalNoticeComponent,
+    PrivacyPolicyComponent
+
   ],
   imports: [
     BrowserModule,

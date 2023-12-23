@@ -17,9 +17,10 @@ export class HomeComponent {
     let opzione__tre = document.getElementById('opzione__tre') as HTMLElement;
     let opzione__quattro = document.getElementById('opzione__quattro') as HTMLElement;
     let sezione__due = document.getElementById('sezione__due') as HTMLElement;
-    let sezione__due__interno__uno = document.getElementById('sezione__due') as HTMLElement;
+    let sezione__tre = document.getElementById('sezione__tre') as HTMLElement;
     let var__code = 0;
     let pos__sez__due = sezione__due.offsetTop;
+    let pos__sez__tre = sezione__tre.offsetTop;
     window.onscroll = function () {
       if (window.scrollY >= (pos__sez__due - 300)) {
         if ((window.scrollY >= (opzione__uno.offsetTop - 300)) && (window.scrollY <= (opzione__due.offsetTop - 300))) {
@@ -59,8 +60,14 @@ export class HomeComponent {
           opzione__tre__menu.style.setProperty("color", "#08456e6b");
           opzione__quattro__menu.style.setProperty("color", "#08466E");
         }
+        if(window.scrollY >= (pos__sez__tre - 500)){
+          opzione__uno__menu.style.setProperty("color", "#08456e00");
+          opzione__due__menu.style.setProperty("color", "#08456e00");
+          opzione__tre__menu.style.setProperty("color", "#08456e00");
+          opzione__quattro__menu.style.setProperty("color", "#08456e00");
+        }
       }
-      else if (window.scrollY < pos__sez__due) {
+      else if ((window.scrollY < pos__sez__due)) {
         opzione__uno__menu.style.setProperty("color", "#08456e00");
         opzione__due__menu.style.setProperty("color", "#08456e00");
         opzione__tre__menu.style.setProperty("color", "#08456e00");
@@ -72,5 +79,4 @@ export class HomeComponent {
   scroll(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth' });
   }
-
 }

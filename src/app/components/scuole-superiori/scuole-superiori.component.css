@@ -1,0 +1,52 @@
+#sezione__uno {
+    width: 100%;
+    height: 80vh;
+    flex-shrink: 0;
+    background: url("../../../assets/immagini/learning.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -80px;
+    padding: 0 200px 0 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr;
+    grid-template-areas: "."".";
+}
+
+.sezione__architettura {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center the items */
+    margin: 100px 0 200px 0;
+}
+
+.sezione__architettura__interna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    width: 1300px;
+}
+
+.container__superiore p {
+    font-size: 1rem !important;
+}
+
+.sezione__architettura__interna ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sezione__architettura__interna h1 {
+    width: 450px;
+}
+
+.sezione__architettura__interna img {
+    width: 100%;
+}
+
+#sezione__due__title {
+    margin-top: 300px;
+    top: 0;
+    position: fixed;
+}

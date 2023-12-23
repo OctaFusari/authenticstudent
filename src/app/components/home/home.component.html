@@ -42,28 +42,7 @@
 
 </div>
 <main>
-    <div class="navbar">
-        <div class="menu">
-            <ul>
-                <li>
-                    <a routerLink="/home" routerLinkActive="active">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="14" viewBox="0 0 35 14" fill="none">
-                        <path d="M35 2C35 3.10457 34.1046 4 33 4L2 4C0.895432 4 0 3.10457 0 2C0 0.895431 0.895432 0 2 0L33 0C34.1046 0 35 0.895431 35 2Z" fill="#08466E"/>
-                        <path d="M35 12C35 13.1046 34.1046 14 33 14L2 14C0.895432 14 0 13.1046 0 12C0 10.8954 0.895432 10 2 10L33 10C34.1046 10 35 10.8954 35 12Z" fill="#08466E"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="logo">
-            <!-- Add your logo image or text here -->
-            <img src="../../../assets/immagini/logoas2 (11).png" alt="Logo">
-        </div>
-        <div class="nav__contatti" style="text-align: right;">
-            <h4 style="margin: 4px;">authenticstudent.it&#64;gmail.com</h4>
-            <h4 style="margin: 4px;">+39 3924821202</h4>
-        </div>
-    </div>
+
     <div class="superiore">
         <div class="su__left">
             <div class="su__left__1">
@@ -89,7 +68,7 @@
                     <h1 class="h1__large" style="color: #b3194269;z-index: 0;margin:0">2023/</h1>
                     <h1 class="h1__large" style="color: #b3194269;z-index: 0;margin:0">2024</h1>
                 </div>
-                <div class="su__right__isadesso">
+                <div (click)="scroll(opzione__uno)" class="su__right__isadesso">
                     <h1>Iscriviti</h1>
                     <h1>adesso!</h1>
                 </div>
@@ -103,8 +82,8 @@
                 <div class="sezione__uno__descrizione">
                     <h2 style="color: #B31942;">la tua guida personalizzata per un percorso accademico di successo negli Stati Uniti</h2>
                     <p>Scopri opportunità straordinarie per studenti italiani desiderosi di eccellere negli studi. Offriamo programmi su misura per scuola superiore e università, adattati alle esigenze di ogni studente.</p>
-                    <button class="button__red__out">
-                        <button class="button__red">
+                    <button routerLink="/chi-siamo" class="button__red__out">
+                        <button routerLink="/chi-siamo" class="button__red">
                             <h3>Leggi di più</h3>
                         </button></button>
                 </div>
@@ -142,7 +121,7 @@
                         <h2 style="color: #B31942;">Persorso di scuola superiore negli USA con famiglia d'accoglienza americana.</h2>
                         <p>Frequenta una scuola superiore negli USA vivendo con una famiglia americana! Il programma offre agli studenti l'opportunità di immergersi nella cultura americana, diventare bilingui e sviluppare competenze accademiche e sociali.
                             Con il supporto costante del nostro team e della famiglia d'accoglienza, garantiamo un anno scolastico indimenticabile in istituti rinomati.</p>
-                        <div class="see__more">
+                        <div class="see__more" routerLink="/scuole-superiori">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
                             <h4>Mostra dettagli</h4>
                         </div>
@@ -158,7 +137,7 @@
                         <p>Ottenere un certificato BAC+2, noto come "certificate", nella disciplina preferita, può facilitare l'ingresso nel mondo del lavoro o il trasferimento a un'università americana per un BAC+4. Scelta comune tra gli studenti americani,
                             i community college offrono un notevole risparmio rispetto all'iscrizione diretta all'università, garantendo anche una base educativa solida per un futuro di successi e opportunità.</p>
 
-                        <div class="see__more">
+                        <div class="see__more" routerLink="/community-college">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
                             <h4>Mostra dettagli</h4>
                         </div>
@@ -174,7 +153,7 @@
                         <p>Ottieni un diploma americano di livello BAC+4 nella tua disciplina preferita, aprendo la strada a opportunità lavorative negli Stati Uniti. Il nostro programma non solo ti offre una formazione di alto livello, ma ti permette di
                             immergerti nella vibrante cultura americana. Con docenti qualificati, strutture innovative e l'opportunità di interagire con studenti provenienti da tutto il mondo, l'Università Americana ti offre molto più di una laurea. </p>
 
-                        <div class="see__more">
+                        <div class="see__more" routerLink="/university">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
                             <h4>Mostra dettagli</h4>
                         </div>
@@ -191,7 +170,7 @@
                             in una cultura affascinante. Creerai connessioni significative, svilupperai una prospettiva globale e aprirai nuove opportunità professionali, preparandoti a un periodo di studio stimolante e al raggiungimento di nuove vette
                             nella tua carriera.</p>
 
-                        <div class="see__more">
+                        <div class="see__more" routerLink="/master">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
                             <h4>Mostra dettagli</h4>
                         </div>
@@ -199,8 +178,43 @@
                 </section>
             </div>
         </div>
-        <div style="height: 100vh;">
+        <div id="sezione__tre">
+            <div class="sezione__tre__sezione__uno">
+                <h1 class="h1__medium">Programmi selezionati e assistenza 24/7</h1>
+            </div>
+            <div class="sezione__tre__line">
 
+            </div>
+            <div class="sezione__tre__sezione__due">
+                <div>
+                    <section>
+                        <h2 style="color: #B31942;">Assistenza</h2>
+                    </section>
+                    <p>
+                        Ci impegniamo a essere al tuo fianco per l'intero percorso del tuo progetto. Dalla fase iniziale con la selezione del programma, passando per la personalizzazione. Ci prendiamo cura anche della gestione della tua registrazione, del visto, degli aspetti
+                        amministrativi e dell'alloggio sul posto.
+                    </p>
+                </div>
+                <div>
+                    <section>
+                        <h2 style="color: #B31942;">I nostri programmi</h2>
+                    </section>
+
+                    <p>
+                        Authentic Student vanta oggi oltre 200 licei e università americane in tutto il territorio degli Stati Uniti. Abbiamo dedicato particolare attenzione alla selezione dei migliori licei e università, garantendo così ai giovani studenti italiani di godere
+                        appieno di ciò che i nostri programmi hanno da offrire.
+                    </p>
+                </div>
+                <div>
+                    <section>
+                        <h2 style="color: #B31942;">Disponibilità</h2>
+                    </section>
+                    <p>
+                        La nostra agenzia e il nostro team sono disponibili 7 giorni su 7, 24 ore su 24, sia per le famiglie in Italia che per i nostri studenti negli Stati Uniti. Grazie alla nostra disponibilità, siamo quindi raggiungibili in qualsiasi momento tramite telefono,
+                        SMS, e-mail, Zoom, WhatsApp e altro.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </main>

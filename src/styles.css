@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "Montserrat, italic";
+    src: local("Montserrat, italic"), url(./assets/fonts/Montserrat/static/Montserrat-BlackItalic.ttf) format("truetype");
+}
+
+@font-face {
     font-family: "AlumniSansCollegiateOne-Regular";
     src: local("AlumniSansCollegiateOne-Regular"), url(./assets/fonts/Alumni_Sans_Collegiate_One/AlumniSansCollegiateOne-Regular.ttf) format("truetype");
 }
@@ -33,15 +38,10 @@ li {
     font-family: "OpenSans-VariableFont_wdth,wght";
 }
 
-li {
-    font-weight: 800;
-    font-size: 1.2rem;
-}
-
 p,
 a,
 span {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 h1 {
