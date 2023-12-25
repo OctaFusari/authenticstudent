@@ -1,0 +1,149 @@
+.container__esterno__generale {
+    display: block !important;
+}
+
+.sezione__uno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../../../assets/immagini/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aeacopia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sezione__uno__sezione__uno {
+    width: 700px;
+    margin-right: 50px;
+}
+
+.sezione__uno__sezione__due {
+    width: 400px;
+}
+
+.sezione__due {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+.sezione__due__desc {
+    width: 700px;
+}
+
+.sezione__due__desc p {
+    width: 500px;
+}
+
+.sezione__uno__sezione__due {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see__more__big {
+    height: 80px !important;
+    width: 80px !important;
+    border-radius: 80px;
+    background-color: #b31942;
+    border: 3px solid #b31942;
+    cursor: pointer;
+}
+
+.see__more__big svg {
+    margin-top: 14px;
+    margin-left: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+.see__more__big:hover {
+    background-color: #b31942;
+    border: 3px solid #b31942;
+}
+
+.see__more__big:hover svg {
+    fill: #ffffff;
+}
+
+.see__more__big:hover h2 {
+    padding-left: 90px;
+}
+
+.see__more__big h2 {
+    position: sticky;
+    z-index: 99;
+    width: 8cm;
+    padding-left: 25px;
+    margin: 25px 25px 25px 0;
+}
+
+.sezione__due__card {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 30px 60px 30px 60px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.form-section {
+    margin: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #08466E;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #08466E;
+}
+
+.see__more {
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff00;
+    border-radius: 50px;
+    border: 3px solid #b319427c;
+    cursor: pointer;
+}
+
+.see__more svg {
+    margin-top: 4px;
+    margin-left: 4px;
+    position: absolute;
+    z-index: 1;
+}
+
+.see__more:hover {
+    background-color: #b31942;
+    border: 3px solid #b31942;
+}
+
+.see__more:hover h4 {
+    padding-left: 70px;
+}
+
+.see__more h4 {
+    position: sticky;
+    z-index: 99;
+    width: 4cm;
+    padding-left: 15px;
+    margin: 15px 15px 15px 0;
+}

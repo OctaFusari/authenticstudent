@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,14 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
+  constructor(private router: Router) { }
   ngOnInit(): void {
+    this.router.events.subscribe((event:any) => {
+      if (!(event instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
     let opzione__uno__menu = document.getElementById('opzione__uno__menu') as HTMLElement;
     let opzione__due__menu = document.getElementById('opzione__due__menu') as HTMLElement;
     let opzione__tre__menu = document.getElementById('opzione__tre__menu') as HTMLElement;

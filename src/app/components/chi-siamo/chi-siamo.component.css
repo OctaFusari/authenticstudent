@@ -1,0 +1,43 @@
+.container__esterno__generale {
+    display: block !important;
+}
+
+.sezione__uno {
+    padding: 200px 200px 0px 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sezione__uno h1 {
+    width: 500px;
+}
+
+.sezione__uno h2 {
+    width: 500px;
+}
+
+.sezione__due {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.sezione__due__card {
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 50px 100px 100px 100px;
+    padding: 30px 60px 30px 60px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.sezione__due__card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sezione__due__card div h1 {
+    margin-left: 20px;
+}

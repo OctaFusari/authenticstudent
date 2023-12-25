@@ -49,6 +49,12 @@
     margin: 0 300px 120px 300px;
 }
 
+@media only screen and (max-width: 1700px) {
+    .sezione__quattro__up {
+        margin: 0 100px 120px 100px;
+    }
+}
+
 .sezione__quattro__up h1 {
     margin: 0;
 }
@@ -81,4 +87,79 @@
 
 .divOcti h4 {
     font-family: "Montserrat, italic" !important;
+}
+
+.cd-nav-trigger-inside_profile {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    margin: 4vw 10vw 0vw 10vw;
+}
+
+.cd-navigation-wrapper {
+    margin: 0 0 0vw 10vw;
+}
+
+.cd-navigation-wrapper div {
+    margin-bottom: 40px;
+}
+
+.cd-nav {
+    /* overflow-y: scroll; */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    visibility: hidden;
+    -webkit-transition: visibility 0s 0.7s;
+    -moz-transition: visibility 0s 0.7s;
+    transition: visibility 0s 0.7s;
+    -webkit-transform: translateX(110%);
+    -moz-transform: translateX(110%);
+    -ms-transform: translateX(110%);
+    -o-transform: translateX(110%);
+    transform: translateX(110%);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.navigation-is-open .cd-nav {
+    visibility: visible;
+    -webkit-transition: visibility 0s 0.7s;
+    -moz-transition: visibility 0s 0.7s;
+    transition: visibility 0s 0.7s;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.cd-nav-container {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: center;
+    /* Center items horizontally */
+}
+
+.cd-navigation-wrapper h1 {
+    cursor: pointer;
+}
+
+.cd-navigation-wrapper h1:hover {
+    color: #B31942 !important;
+}
+
+.cd-nav-container img {
+    width: 600px;
+    opacity: 0.7;
 }

@@ -14,5 +14,10 @@ export class AppComponent {
 
   scroll(el: HTMLElement) {
     el.scrollIntoView({ behavior: 'smooth' });
+  }  
+
+  status: boolean = false;
+  clickEvent(){
+      this.status = !this.status;       
   }
 }

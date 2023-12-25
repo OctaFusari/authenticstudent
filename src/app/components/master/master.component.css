@@ -1,0 +1,151 @@
+.container__esterno__generale {
+    display: block !important;
+}
+
+#sezione__uno {
+    height: 80vh;
+    flex-shrink: 0;
+    background: url("../../../assets/immagini/crosscampus2019.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -80px;
+    padding: 0 200px 0 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 1fr;
+    grid-template-areas: "."".";
+}
+
+.sezione__architettura {
+    display: flex;
+    justify-content: center;
+    /* Horizontally center the items */
+    margin: 100px 0 200px 0;
+}
+
+.sezione__architettura__interna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". .";
+    width: 1300px;
+}
+
+.container__esterno__generale p {
+    font-size: 1rem !important;
+}
+
+.sezione__architettura__interna ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sezione__architettura__interna h1 {
+    width: 450px;
+}
+
+.sezione__architettura__interna img {
+    width: 100%;
+}
+
+#sezione__due__title {
+    margin-top: 300px;
+    top: 0;
+    position: fixed;
+}
+
+.see__more {
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff00;
+    border-radius: 50px;
+    border: 3px solid #b319427c;
+    cursor: pointer;
+}
+
+.see__more__big {
+    height: 80px;
+    width: 80px;
+    background-color: #ffffff00;
+    border-radius: 80px;
+    border: 3px solid #b319427c;
+    cursor: pointer;
+}
+
+.see__more__big svg {
+    margin-top: 14px;
+    margin-left: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+.see__more__big:hover {
+    background-color: #b31942;
+    border: 3px solid #b31942;
+}
+
+.see__more__big:hover svg {
+    fill: #ffffff;
+}
+
+.see__more__big:hover h2 {
+    padding-left: 90px;
+}
+
+.see__more__big h2 {
+    position: sticky;
+    z-index: 99;
+    width: 8cm;
+    padding-left: 25px;
+    margin: 25px 25px 25px 0;
+}
+
+.see__more svg {
+    margin-top: 4px;
+    margin-left: 4px;
+    position: absolute;
+    z-index: 1;
+}
+
+.see__more:hover {
+    background-color: #b31942;
+    border: 3px solid #b31942;
+}
+
+.see__more:hover h4 {
+    padding-left: 70px;
+}
+
+.see__more h4 {
+    position: sticky;
+    z-index: 99;
+    width: 4cm;
+    padding-left: 15px;
+    margin: 15px 15px 15px 0;
+}
+
+#sezione__cinque {
+    padding: 0px 300px 0px 300px;
+}
+
+.sezione__cinque__contianer__interno {
+    padding: 1vw;
+    border-radius: 1.5em;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin: 50px 0 100px 0;
+    padding: 30px 60px 30px 60px;
+}
+
+#sezione__sei {
+    margin: 0px 300px 200px 300px;
+}
+
+.image__fondo {
+    height: 40vh;
+    flex-shrink: 0;
+    padding: 10vw;
+    background: linear-gradient(to top, #ffffff 1%, #b3194273 99%), url('../../../assets/immagini/image__cropped.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 300px;
+}

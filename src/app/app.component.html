@@ -2,7 +2,7 @@
     <div class="menu">
         <ul>
             <li>
-                <a routerLink="/home" routerLinkActive="active">
+                <a style="cursor: pointer;" (click)="clickEvent()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="14" viewBox="0 0 35 14" fill="none">
                     <path d="M35 2C35 3.10457 34.1046 4 33 4L2 4C0.895432 4 0 3.10457 0 2C0 0.895431 0.895432 0 2 0L33 0C34.1046 0 35 0.895431 35 2Z" fill="#08466E"/>
                     <path d="M35 12C35 13.1046 34.1046 14 33 14L2 14C0.895432 14 0 13.1046 0 12C0 10.8954 0.895432 10 2 10L33 10C34.1046 10 35 10.8954 35 12Z" fill="#08466E"/>
@@ -58,3 +58,52 @@
         <div></div>
     </div>
 </div>
+<div [ngClass]="{'navigation-is-open': status === true}">
+    <div id="cd-nav" class="cd-nav">
+        <div class="cd-nav-trigger-inside_profile">
+            <div>
+                <h2 style="cursor: pointer;" (click)="clickEvent()">Chiudi
+                </h2>
+            </div>
+        </div>
+        <div class="cd-nav-container">
+            <div>
+                <div style="position: absolute; z-index:1001;margin-left:-60px">
+                    <h1 class="h1__medium" style="color: #B31942;margin:0">Il tuo </h1>
+                    <h1 class="h1__medium" style="color: #B31942;margin:0">futuro</h1>
+                    <h1 class="h1__medium" style="color: #B31942;margin:0">La nostra</h1>
+                    <h1 class="h1__medium" style="color: #B31942;margin:0">guida</h1>
+                    <h2 style="margin-top: 40px;">Contattaci</h2>
+                    <h4>authenticstudent.it@gmail.com</h4>
+                    <h4>+39 3924821202</h4>
+                </div>
+                <img src="../assets/immagini/studenti-mla-con-bandiera-americana.jpg">
+            </div>
+            <div class="cd-navigation-wrapper">
+                <div>
+                    <h1 class="h1__little" routerLink="/" (click)="clickEvent()">Benvenuto</h1>
+                </div>
+                <div>
+                    <h1 class="h1__little" routerLink="/scuole-superiori" (click)="clickEvent()">Scuole Superiori</h1>
+                </div>
+                <div>
+                    <h1 class="h1__little" routerLink="/community-college" (click)="clickEvent()">Community College</h1>
+                </div>
+                <div>
+                    <h1 class="h1__little" routerLink="/university" (click)="clickEvent()">Università</h1>
+                </div>
+                <div>
+                    <h1 class="h1__little" routerLink="/master" (click)="clickEvent()">Master</h1>
+                </div>
+                <div>
+                    <h1 class="h1__little" routerLink="/chi-siamo" (click)="clickEvent()">Chi siamo</h1>
+                </div>
+                <div>
+                    <h1 class="h1__little" routerLink="/personalizza-il-tuo-progetto" (click)="clickEvent()">Personalizza il tuo progetto</h1>
+                </div>
+                <div>
+                    <h1 class="h1__little" routerLink="/testimonianze" (click)="clickEvent()">Testimonianze</h1>
+                </div>
+            </div>
+        </div>
+    </div>
