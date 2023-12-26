@@ -94,7 +94,7 @@
     grid-template-columns: 1fr 100px;
     grid-template-rows: 1fr;
     grid-template-areas: ". .";
-    margin: 4vw 10vw 0vw 10vw;
+    margin: 3vw 10vw 0vw 10vw;
 }
 
 .cd-navigation-wrapper {
@@ -106,6 +106,7 @@
 }
 
 .cd-nav {
+    overflow-y: scroll;
     /* overflow-y: scroll; */
     position: fixed;
     z-index: 1000;
@@ -146,9 +147,7 @@
 .cd-nav-container {
     display: flex;
     align-items: center;
-    /* Center items vertically */
     justify-content: center;
-    /* Center items horizontally */
 }
 
 .cd-navigation-wrapper h1 {
@@ -162,4 +161,17 @@
 .cd-nav-container img {
     width: 600px;
     opacity: 0.7;
+}
+
+.cd__interno__secondario div{
+    position: absolute; z-index:1001;margin-left:-60px
+}
+
+@media only screen and (max-width: 1600px){
+    .cd-nav-container {
+        margin-top: -40px;
+    }
+    .cd-navigation-wrapper {
+        margin: 0 -80px 0vw 8vw;
+    }
 }

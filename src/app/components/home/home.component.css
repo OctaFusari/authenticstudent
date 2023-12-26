@@ -351,12 +351,12 @@ main {
     background-color: #ffffff;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1700px) {
     .sezione__uno {
-        padding: 200px 50px 300px 150px;
+        padding: 200px 200px 300px 300px;
     }
     #sezione__due {
-        padding: 0px 50px 300px 150px;
+        padding: 0px 200px 300px 300px;
     }
     .sezione__tre__sezione__due {
         margin: 0 100px 0 100px;
@@ -368,12 +368,25 @@ main {
     .sezione__due__interno__due section {
         padding: 200px 0px 200px 0;
     }
+    .su__left {
+        padding: 140px 0px 180px 160px;
+    }
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .sezione__uno {
+        padding: 200px 50px 300px 150px;
+    }
+    #sezione__due {
+        padding: 0px 50px 300px 150px;
+    }
+    .sezione__due__interno__due section {
+        padding: 200px 0px 200px 0;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
-    .su__left {
-        padding: 220px 0px 200px 100px;
-    }
     .sezione__uno {
         padding: 200px 50px 300px 150px;
     }
