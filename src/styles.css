@@ -59,6 +59,15 @@ h5 {
     font-weight: 800;
 }
 
+@media only screen and (min-resolution: 10dpi) {
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-weight: 600 !important;
+    }
+}
+
 * {
     color: #08466E;
     transition-duration: .5s;

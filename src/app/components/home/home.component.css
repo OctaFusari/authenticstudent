@@ -267,7 +267,6 @@ main {
 .sezione__uno .sezione__uno__descrizione p {
     width: 400px;
     margin-bottom: 30px;
-    overflow-y: scroll;
 }
 
 .sezione__due__interno__due section {
@@ -383,7 +382,6 @@ main {
         padding: 140px 0px 180px 160px;
     }
 }
-
 
 @media only screen and (max-width: 1500px) {
     .sezione__uno {

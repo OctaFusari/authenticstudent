@@ -35,10 +35,16 @@ img {
 .sezione__due__container__inside svg {
     margin: -60px 0 0 -100px;
     position: absolute;
+    z-index: 0;
 }
 
 .sezione__due__container__inside div:last-of-type {
     margin-top: -100px;
+}
+
+.sezione__due__container__inside p {
+    z-index: 2;
+    position: sticky;
 }
 
 .title__sezioni {
@@ -46,7 +52,7 @@ img {
     z-index: -1;
     margin: 300px 300px 0 200px;
     width: 400px;
-    color: #08456e4b;
+    color: #08456e1e;
 }
 
 
