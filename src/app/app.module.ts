@@ -15,6 +15,7 @@ import { RefundPolicyComponent } from './components/policies/refund-policy/refun
 import { TermsOfServiceComponent } from './components/policies/terms-of-service/terms-of-service.component';
 import { LegalNoticeComponent } from './components/policies/legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './components/policies/privacy-policy/privacy-policy.component';
+import { RipetizioniComponent } from './components/ripetizioni/ripetizioni.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PrivacyPolicyComponent } from './components/policies/privacy-policy/pri
     RefundPolicyComponent,
     TermsOfServiceComponent,
     LegalNoticeComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    RipetizioniComponent
 
   ],
   imports: [

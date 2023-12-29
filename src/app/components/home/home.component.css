@@ -122,19 +122,28 @@ main {
 /* HOME PAGE - TOP */
 
 .superiore {
-    display: grid;
+    /*     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: ". .";
+    grid-template-areas: ". ."; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: linear-gradient(to top, #ffffff79 1%, #ffffff 99%), url('../../../assets/immagini/image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 99;
     position: sticky;
+    height: 100vh;
+}
+
+.superiore h1 {
+    margin: none;
 }
 
 .su__left {
-    padding: 220px 0px 200px 200px;
+    /*     padding: 220px 0px 200px 200px; */
 }
 
 .su__right {
@@ -158,7 +167,7 @@ main {
 }
 
 .su__left__3 {
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 
@@ -223,7 +232,7 @@ main {
 }
 
 #sezione__due {
-    padding: 0px 300px 300px 300px;
+    padding: 0px 300px 200px 300px;
 }
 
 #sezione__due__interno__uno {
@@ -251,12 +260,12 @@ main {
     cursor: pointer;
 }
 
-.sezione__uno .sezione__uno__descrizione h2 {
-    width: 400px;
+.sezione__uno .sezione__uno__descrizione {
+    width: 450px;
 }
 
 .sezione__uno .sezione__uno__descrizione p {
-    width: 310px;
+    width: 400px;
     margin-bottom: 30px;
     overflow-y: scroll;
 }
@@ -264,16 +273,18 @@ main {
 .sezione__due__interno__due section {
     height: fit-content;
     display: flex;
-    padding: 200px 0px 200px 200px;
+    padding: 100px 0px 100px 200px;
 }
 
 .sezione__due__interno__due h1 {
     margin: 0;
 }
 
-.sezione__due__interno__due p {
-    margin-right: 70px;
-    margin: 0px 70px 50px 0;
+.sezione__due__interno__due__sezione__due {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sezione__due__interno__due__sezione__uno div {
@@ -319,9 +330,9 @@ main {
 }
 
 #sezione__tre {
-    height: 100vh;
     position: sticky;
     z-index: 99;
+    margin-bottom: 250px;
 }
 
 .sezione__tre__line {
@@ -366,7 +377,7 @@ main {
         width: 22cm;
     }
     .sezione__due__interno__due section {
-        padding: 200px 0px 200px 0;
+        padding: 100px 0px 100px 0;
     }
 }
 
@@ -378,7 +389,7 @@ main {
         padding: 200px 50px 300px 150px;
     }
     #sezione__due {
-        padding: 0px 50px 300px 150px;
+        padding: 0px 50px 150px 150px;
     }
     .sezione__tre__sezione__due {
         margin: 0 50px 0 100px;
@@ -395,15 +406,6 @@ main {
 }
 
 @media only screen and (max-width: 1100px) {
-    .sezione__uno {
-        padding: 200px 50px 300px 50px;
-    }
-    #sezione__due {
-        padding: 0px 50px 300px 50px;
-    }
-    .sezione__tre__sezione__due {
-        margin: 0 50px 0 50px;
-    }
     .sezione__tre__sezione__uno {
         margin: 0 50px 100px 50px;
         width: 22cm;

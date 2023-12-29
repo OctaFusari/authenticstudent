@@ -7,13 +7,13 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('../../../assets/immagini/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aeacopia.jpg');
+    background: url('../../../assets/immagini/cittamidnight.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .sezione__uno__sezione__uno {
-    width: 700px;
+    width: 650px;
     margin-right: 50px;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .sezione__due__desc {
-    width: 700px;
+    width: 600px;
 }
 
 .sezione__due__desc p {

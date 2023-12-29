@@ -16,4 +16,7 @@ ngOnInit(): void {
     window.scrollTo(0, 0)
   });
 }
+scroll(el: HTMLElement) {
+  el.scrollIntoView({ behavior: 'smooth' });
+}
 }

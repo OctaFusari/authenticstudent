@@ -12,6 +12,7 @@ import { PrivacyPolicyComponent } from './components/policies/privacy-policy/pri
 import { RefundPolicyComponent } from './components/policies/refund-policy/refund-policy.component';
 import { TermsOfServiceComponent } from './components/policies/terms-of-service/terms-of-service.component';
 import { LegalNoticeComponent } from './components/policies/legal-notice/legal-notice.component';
+import { RipetizioniComponent } from './components/ripetizioni/ripetizioni.component';
 
 const routes: Routes = [
   {path:"", component: HomeComponent},
@@ -20,9 +21,9 @@ const routes: Routes = [
   {path:"university", component: UniversitaComponent},
   {path:"master", component: MasterComponent},
   {path:"chi-siamo", component: ChiSiamoComponent},
-  {path:"personalizza-il-tuo-progetto", component: PersonalizzaProgettoComponent},
+  {path:"iscrizione", component: PersonalizzaProgettoComponent},
   {path:"testimonianze", component: TestimonianzeComponent},
-  
+  {path:"ripetizioni", component: RipetizioniComponent},
   {path:"privacy-policy", component: PrivacyPolicyComponent},
   {path:"refund-policy", component: RefundPolicyComponent},
   {path:"terms-of-service", component: TermsOfServiceComponent},

@@ -7,7 +7,6 @@
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #ffffff69;
 }
 
 .navbar div {
@@ -41,9 +40,18 @@
     margin-right: 10vw;
 }
 
+#sezione__quattro {
+    padding-top: 120px;
+    background-color: #08466E;
+}
+
+#sezione__quattro * {
+    color: white !important;
+}
+
 .sezione__quattro__up {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: ". . .";
     margin: 0 300px 120px 300px;
@@ -79,7 +87,8 @@
 
 .dO_interno {
     width: 100%;
-    background-color: #08466E;
+    background-color: #ffffff;
+    /*  background-color: #08466E; */
     height: 2px;
     flex-shrink: 0;
     transition-duration: .2s;
@@ -94,7 +103,7 @@
     grid-template-columns: 1fr 100px;
     grid-template-rows: 1fr;
     grid-template-areas: ". .";
-    margin: 4vw 10vw 0vw 10vw;
+    margin: 2vw 10vw 0vw 10vw;
 }
 
 .cd-navigation-wrapper {
@@ -149,6 +158,7 @@
     /* Center items vertically */
     justify-content: center;
     /* Center items horizontally */
+    margin-top: -40px;
 }
 
 .cd-navigation-wrapper h1 {
