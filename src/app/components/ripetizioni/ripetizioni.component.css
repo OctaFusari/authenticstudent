@@ -1,0 +1,165 @@
+.container__esterno__generale {
+    display: block !important;
+}
+
+.sezione__uno {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../../../assets/immagini/cittamidnight.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sezione__uno__sezione__uno {
+    width: 650px;
+    margin-right: 50px;
+}
+
+.sezione__uno__sezione__due {
+    width: 400px;
+}
+
+.sezione__due {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+.sezione__due__desc {
+    width: 600px;
+}
+
+.sezione__due__desc p {
+    width: 500px;
+}
+
+.sezione__uno__sezione__due {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see__more__big {
+    height: 80px !important;
+    width: 80px !important;
+    border-radius: 80px;
+    background-color: #b31942;
+    border: 3px solid #b31942;
+    cursor: pointer;
+}
+
+.see__more__big svg {
+    margin-top: 14px;
+    margin-left: 14px;
+    position: absolute;
+    z-index: 1;
+}
+
+.see__more__big:hover {
+    background-color: #b31942;
+    border: 3px solid #b31942;
+}
+
+.see__more__big:hover svg {
+    fill: #ffffff;
+}
+
+.see__more__big:hover h2 {
+    padding-left: 90px;
+}
+
+.see__more__big h2 {
+    position: sticky;
+    z-index: 99;
+    width: 8cm;
+    padding-left: 25px;
+    margin: 25px 25px 25px 0;
+}
+
+.sezione__due__card {
+    background-color: #ffffff;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 30px 60px 30px 60px;
+    width: 500px;
+    border-radius: 20px;
+    z-index: 10;
+    position: sticky;
+}
+
+.form-section {
+    margin: 20px;
+    width: 100%;
+}
+
+.see__more {
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff00;
+    border-radius: 50px;
+    border: 3px solid #b319427c;
+    cursor: pointer;
+}
+
+.see__more svg {
+    margin-top: 4px;
+    margin-left: 4px;
+    position: absolute;
+    z-index: 1;
+}
+
+.see__more:hover {
+    background-color: #b31942;
+    border: 3px solid #b31942;
+}
+
+.see__more:hover h4 {
+    padding-left: 70px;
+}
+
+.see__more h4 {
+    position: sticky;
+    z-index: 99;
+    width: 4cm;
+    padding-left: 15px;
+    margin: 15px 15px 15px 0;
+}
+
+.sezione__due__desc__img {
+    margin: -200px 0 0 -200px;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+}
+
+.sezione__due__desc__img__uno {
+    height: 500px;
+    width: 500px;
+    border-radius: 500px;
+    /*     background: url("../../../assets/immagini/appleeducation.jpg"), rgb(255, 255, 255) 90% / cover no-repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.sezione__due__desc__img__due {
+    height: 500px;
+    width: 500px;
+    /*     border-radius: 300px;
+    background: url("../../../assets/immagini/appleeducation.jpg"), rgb(255, 255, 255) 90% / cover no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 400px;
+    margin-left: -100px; */
+}
+
+.sezione__due__desc__img__tre {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 1000px;
+    background: url("../../../assets/immagini/eliott-reyna-jCEpN62oWL4-unsplash.jpg"), rgb(255, 255, 255) 90% / cover no-repeat;
+    background-position: center;
+    background-size: cover;
+}
