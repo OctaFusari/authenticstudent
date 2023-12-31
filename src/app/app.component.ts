@@ -12,6 +12,14 @@ export class AppComponent {
     window.location.href = "https://octimal.it/";
   }
 
+  stu__tiktok(){
+    window.location.href = "https://www.tiktok.com/@authenticstudent_it";
+  }
+
+  stu__instagram(){
+    window.location.href = "https://www.instagram.com/authenticstudent_it?igsh=cnZ3MHpvcHdld2N2";
+  }
+
   ngOnInit(): void {
     let sezione__quattro = document.getElementById('sezione__quattro') as HTMLElement;
     let menu__uno = document.getElementById('menu__uno') as HTMLElement;
@@ -41,5 +49,8 @@ export class AppComponent {
   status: boolean = false;
   clickEvent(){
       this.status = !this.status;       
+  }
+  link__3(){
+    window.location.href = "mailto:${authenticstudent.it@gmail.com}";
   }
 }

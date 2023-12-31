@@ -130,7 +130,7 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to top, #ffffff79 1%, #ffffff 99%), url('../../../assets/immagini/image.jpg');
+    background: linear-gradient(to top, #ffffff79 1%, #ffffff 99%), url('../../../assets/immagini/skyscraper.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 99;
@@ -173,20 +173,12 @@ main {
 
 /* SEZIONE 2 */
 
-.sezione__uno__sezione__immagini {
-    width: 338px;
-    height: 338px;
-    flex-shrink: 0;
-    border-radius: 200px;
-    background: url("../../../assets/immagini/grad-guide-overview-hs-grad-ceremony-default-section-2.jpg"), lightgray 50% / cover no-repeat;
-}
-
 .sezione__uno__sezione__immagini .immagine__uno {
     width: 338px;
     height: 338px;
     flex-shrink: 0;
     border-radius: 200px;
-    background: url("../../../assets/immagini/grad-guide-overview-hs-grad-ceremony-default-section-2.jpg"), lightgray 50% / cover no-repeat;
+    background: url("../../../assets/immagini/grad-guide-overview-hs-grad-ceremony-default-section-2.jpg");
     background-position: center;
     background-size: cover;
     z-index: 0;
@@ -199,7 +191,7 @@ main {
     height: 250px;
     flex-shrink: 0;
     border-radius: 200px;
-    background: url("../../../assets/immagini/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg"), lightgray 50% / cover no-repeat;
+    background: url("../../../assets/immagini/new-york-city-evening-NYCTG0221-52492d6ccab44f328a1c89f41ac02aea.jpg");
     background-position: center;
     background-size: cover;
     position: sticky;
@@ -212,7 +204,7 @@ main {
     height: 400px;
     flex-shrink: 0;
     border-radius: 200px;
-    background: url("../../../assets/immagini/learning.jpg"), lightgray 50% / cover no-repeat;
+    background: url("../../../assets/immagini/learning.jpg");
     background-position: center;
     background-size: cover;
     z-index: 0;
@@ -222,7 +214,7 @@ main {
 }
 
 .sezione__uno {
-    padding: 200px 300px 300px 300px;
+    padding: 200px 300px 200px 300px;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
@@ -331,7 +323,7 @@ main {
 #sezione__tre {
     position: sticky;
     z-index: 99;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 
 .sezione__tre__line {
@@ -359,73 +351,6 @@ main {
     width: fit-content;
     padding: 0 8px 0 8px;
     background-color: #ffffff;
-}
-
-@media only screen and (max-width: 1700px) {
-    .sezione__uno {
-        padding: 200px 200px 300px 300px;
-    }
-    #sezione__due {
-        padding: 0px 200px 300px 300px;
-    }
-    .sezione__tre__sezione__due {
-        margin: 0 100px 0 100px;
-    }
-    .sezione__tre__sezione__uno {
-        margin: 0 150px 100px 150px;
-        width: 22cm;
-    }
-    .sezione__due__interno__due section {
-        padding: 100px 0px 100px 0;
-    }
-    .su__left {
-        padding: 140px 0px 180px 160px;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    .sezione__uno {
-        padding: 200px 50px 300px 150px;
-    }
-    #sezione__due {
-        padding: 0px 50px 300px 150px;
-    }
-    .sezione__due__interno__due section {
-        padding: 200px 0px 200px 0;
-    }
-}
-
-@media only screen and (max-width: 1300px) {
-    .sezione__uno {
-        padding: 200px 50px 300px 150px;
-    }
-    #sezione__due {
-        padding: 0px 50px 150px 150px;
-    }
-    .sezione__tre__sezione__due {
-        margin: 0 50px 0 100px;
-    }
-    .sezione__tre__sezione__uno {
-        margin: 0 150px 100px 150px;
-        width: 22cm;
-    }
-    .sezione__due__interno__due__sezione__uno div {
-        width: 400px;
-        height: 600px;
-        margin-right: 80px;
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    .sezione__tre__sezione__uno {
-        margin: 0 50px 100px 50px;
-        width: 22cm;
-    }
-    .sezione__due__interno__due__sezione__uno div {
-        width: 400px;
-        height: 600px;
-        margin-right: 40px;
-    }
 }
 
 .see__more__big {
@@ -463,4 +388,137 @@ main {
     width: 8cm;
     padding-left: 25px;
     margin: 25px 25px 25px 0;
+}
+
+
+/* Your existing CSS */
+
+@media only screen and (max-width: 1700px) {
+    .sezione__uno {
+        padding: 200px 200px 300px 300px;
+    }
+    #sezione__due {
+        padding: 0px 200px 300px 300px;
+    }
+    .sezione__tre__sezione__due {
+        margin: 0 100px 0 100px;
+    }
+    .sezione__tre__sezione__uno {
+        margin: 0 150px 100px 150px;
+        width: 22cm;
+    }
+    .sezione__due__interno__due section {
+        padding: 100px 0px 100px 0;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .sezione__uno {
+        padding: 200px 50px 300px 150px;
+    }
+    .sezione__due__interno__due section {
+        padding: 200px 0px 200px 0;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .sezione__uno {
+        padding: 200px 50px 300px 150px;
+    }
+    #sezione__due {
+        padding: 0px 50px 150px 150px;
+    }
+    .sezione__tre__sezione__due {
+        margin: 0 50px 0 100px;
+    }
+    .sezione__tre__sezione__uno {
+        margin: 0 150px 100px 150px;
+        width: 22cm;
+    }
+    .sezione__due__interno__due__sezione__uno div {
+        width: 400px;
+        height: 600px;
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .sezione__tre__sezione__uno {
+        margin: 0 50px 100px 50px;
+        width: 22cm;
+    }
+    .sezione__due__interno__due__sezione__uno div {
+        width: 400px;
+        height: 600px;
+        margin-right: 40px;
+    }
+    .sezione__due__interno__due__sezione__uno div {
+        width: 350px;
+        height: 500px;
+    }
+    .sezione__uno__sezione__immagini .immagine__uno {
+        width: 200px;
+        height: 200px;
+        border-radius: 250px;
+        margin-bottom: 0cm;
+    }
+    .sezione__uno__sezione__immagini .immagine__due {
+        width: 150px;
+        height: 150px;
+        border-radius: 200px;
+        margin-left: 1cm;
+    }
+    .sezione__uno__sezione__immagini .immagine__tre {
+        width: 200px;
+        height: 200px;
+        border-radius: 280px;
+        margin-left: -2.5cm;
+        margin-top: -1cm;
+    }
+}
+
+
+/* Responsive styles for smaller screens */
+
+@media only screen and (max-width: 800px) {
+    #sezione__due__interno__uno {
+        display: none;
+    }
+    .sezione__uno {
+        padding: 150px 20px 250px 20px;
+        grid-template-columns: 1fr;
+    }
+    #sezione__due {
+        padding: 0px 20px 200px 20px;
+    }
+    .sezione__tre__sezione__due {
+        margin: 0 20px;
+    }
+    .sezione__tre__sezione__uno {
+        margin: 0 20px 50px 20px;
+        width: auto;
+    }
+    .sezione__due__interno__due section {
+        padding: 50px 0px 50px 0;
+    }
+    .sezione__uno__sezione__immagini .immagine__uno,
+    .sezione__uno__sezione__immagini .immagine__due,
+    .sezione__uno__sezione__immagini .immagine__tre {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .see__more__big {
+        height: 60px;
+        width: 60px;
+        border-radius: 60px;
+    }
+    .see__more__big h2 {
+        width: auto;
+        padding-left: 15px;
+        margin: 15px 15px 15px 0;
+    }
 }

@@ -1,9 +1,25 @@
-<div class="container__esterno__generale" style="display: none;">
+<div class="container__esterno__generale">
     <div class="sezione__uno">
-        <h1 class="h1__large">Vogliamo guidare il vostro futuro.</h1>
-        <h2 style="color: #B31942;">Con la nostra esperienza come studenti negli USA e le nostre competenze, vi guideremo nel vostro percorso verso il vostro futuro in america.</h2>
+        <div class="sezione__uno__sezione__uno">
+            <h1 class="h1__medium">Vogliamo guidare il vostro futuro.</h1>
+            <p>Con la nostra esperienza come studenti negli USA e le nostre competenze, vi guideremo nel vostro percorso verso il vostro futuro in america.</p>
+            <div (click)="scroll(chisiamo)" class="see__more__big">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff00" height="54" viewBox="0 -960 960 960" width="54"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                <h2>Scopri la nostra storia</h2>
+            </div>
+        </div>
+        <div class="sezione__uno__sezione__due">
+            <div (click)="scroll(chisiamo)" class="sezione__uno__sezione__due__img__uno">
+                <h2 style="color: #B31942;margin:0">Davide</h2>
+                <h2 style="color: #B31942;margin:0">Comai</h2>
+            </div>
+            <div (click)="scroll(chisiamo)" class="sezione__uno__sezione__due__img__due">
+                <h2 style="color: #B31942;margin:0">Matteo</h2>
+                <h2 style="color: #B31942;margin:0">Chiti</h2>
+            </div>
+        </div>
     </div>
-    <div class="sezione__due">
+    <div class="sezione__due" #chisiamo>
         <div class="sezione__due__card">
             <div>
                 <img src="../../../assets/immagini/profili/IMG_678355870D1D-1.jpg">

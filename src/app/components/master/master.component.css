@@ -144,7 +144,7 @@
     height: 40vh;
     flex-shrink: 0;
     padding: 10vw;
-    background: linear-gradient(to top, #08466E 1%, #b3194273 99%), url('../../../assets/immagini/image__cropped.jpg');
+    background: linear-gradient(to top, #ffffff 1%, #b3194273 99%), url('../../../assets/immagini/image__cropped.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

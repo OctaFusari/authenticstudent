@@ -15,8 +15,21 @@ ngOnInit(): void {
     }
     window.scrollTo(0, 0)
   });
+  this.onImageLoad()
 }
+
+imageUrl = '../../../assets/immagini/cittamidnight.jpg';
+isImageLoaded = false;
+
+onImageLoad() {
+  this.isImageLoaded = true;
+}
+
+
 scroll(el: HTMLElement) {
   el.scrollIntoView({ behavior: 'smooth' });
+}
+link__3(){
+  window.location.href = "mailto:${authenticstudent.it@gmail.com}";
 }
 }

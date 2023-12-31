@@ -19,4 +19,7 @@ ngOnInit(): void {
 scroll(el: HTMLElement) {
   el.scrollIntoView({ behavior: 'smooth' });
 }
+link__3(){
+  window.location.href = "mailto:${authenticstudent.it@gmail.com}";
+}
 }

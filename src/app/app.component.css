@@ -7,6 +7,7 @@
     top: 0;
     width: 100%;
     z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.267);
 }
 
 .navbar div {
@@ -34,6 +35,11 @@
 
 .menu {
     margin-left: 10vw;
+    display: block;
+}
+
+.menu__due {
+    display: none;
 }
 
 .nav__contatti {
@@ -41,26 +47,25 @@
 }
 
 #sezione__quattro {
-    height: 100vh;
-    background-color: #08466E;
+    min-height: 100vh;
+    z-index: 99;
+    position: sticky;
 }
 
-#sezione__quattro * {
-    color: white !important;
+.cd__interno__secondario svg:hover path {
+    fill: #08456ea6 !important;
+}
+
+.sezione__quattro__up svg:hover path {
+    fill: #b31942b7 !important;
 }
 
 .sezione__quattro__up {
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: ". . .";
+    grid-template-areas: "footer-logo footer-columns-one footer-columns-two";
     padding: 200px 300px 120px 300px;
-}
-
-@media only screen and (max-width: 1700px) {
-    .sezione__quattro__up {
-        margin: 0 100px 120px 100px;
-    }
 }
 
 .sezione__quattro__up h1 {
@@ -74,6 +79,30 @@
 .footer-logo {
     display: flex;
     align-items: center;
+    grid-area: footer-logo;
+}
+
+.footer-columns-one {
+    grid-area: footer-columns-one;
+}
+
+.footer-columns-two {
+    grid-area: footer-columns-two;
+}
+
+.footer-logo-sec-one {
+    display: block;
+}
+
+.footer-logo-sec-two {
+    display: none;
+}
+
+.footer-logo svg {
+    height: 48px !important;
+    width: 48px !important;
+    margin: 20px 30px 20px 0px;
+    cursor: pointer
 }
 
 .divOcti {
@@ -87,7 +116,7 @@
 
 .dO_interno {
     width: 100%;
-    background-color: #ffffff;
+    background-color: #08466E;
     /*  background-color: #08466E; */
     height: 2px;
     flex-shrink: 0;
@@ -180,11 +209,83 @@
     margin-left: -60px
 }
 
+
+/* Your existing CSS */
+
 @media only screen and (max-width: 1600px) {
     .cd-nav-container {
         margin-top: -40px;
     }
     .cd-navigation-wrapper {
         margin: 0 -80px 0vw 8vw;
+    }
+    .sezione__quattro__up {
+        padding: 200px 100px 120px 100px;
+    }
+    .divOcti {
+        grid-template-columns: 100px 200px 4fr;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar {
+        padding: 10px;
+    }
+    .menu {
+        margin-left: 5vw;
+    }
+    .nav__contatti {
+        margin-right: 5vw;
+    }
+    .sezione__quattro__up {
+        padding: 150px 50px 80px 50px;
+        grid-template-columns: 1fr;
+    }
+    .sezione__quattro__up h1 {
+        margin-bottom: 20px;
+    }
+    .footer-columns div {
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-logo svg {
+        height: 24px !important;
+        width: 24px !important;
+    }
+    .sezione__quattro__up {
+        padding: 120px 20px 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "footer-logo footer-logo" "footer-columns-one footer-columns-two";
+    }
+    .footer-logo-sec-one {
+        display: none;
+    }
+    .footer-logo-sec-two {
+        display: block;
+    }
+    .nav__contatti {
+        display: none;
+    }
+    .navbar div {
+        width: fit-content;
+    }
+    .navbar {
+        padding: 20px 0 20px 0;
+        background-color: rgb(255, 255, 255);
+    }
+    .logo img {
+        margin-left: 20px;
+        height: 60px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu__due {
+        display: block;
+        margin-right: 30px;
     }
 }

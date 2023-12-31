@@ -9,11 +9,6 @@
 }
 
 @font-face {
-    font-family: "AlumniSansCollegiateOne-Regular";
-    src: local("AlumniSansCollegiateOne-Regular"), url(./assets/fonts/Alumni_Sans_Collegiate_One/AlumniSansCollegiateOne-Regular.ttf) format("truetype");
-}
-
-@font-face {
     font-family: "OpenSans-VariableFont_wdth,wght";
     src: local("OpenSans-VariableFont_wdth,wght"), url(./assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf) format("truetype");
 }
@@ -25,7 +20,21 @@ body {
     width: 100%;
     padding: 0 !important;
     top: 0 !important;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
+
+/* 
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+ */
 
 a,
 p,
@@ -39,6 +48,9 @@ input,
 textarea {
     font-family: "OpenSans-VariableFont_wdth,wght";
 }
+
+
+/* Common styles for small screens and larger screens */
 
 p,
 a,
@@ -57,16 +69,7 @@ label {
     margin-bottom: 5px;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    border: none;
-    border-bottom: 1px solid #08466E;
-    outline: none;
-}
-
+input,
 textarea {
     width: 100%;
     padding: 8px;
@@ -93,6 +96,9 @@ h5 {
     }
 }
 
+
+/* Common styles for all screen sizes */
+
 * {
     color: #08466E;
     transition-duration: .5s;
@@ -100,11 +106,15 @@ h5 {
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
+    text-rendering: optimizeLegibility;
 }
 
 .logo {
     font-family: "Montserrat";
 }
+
+
+/* Heading styles for different screen sizes */
 
 .h1__large {
     font-size: 5rem;
@@ -122,13 +132,20 @@ h5 {
     font-size: 10rem;
 }
 
+
+/* Button styles for different screen sizes */
+
+.button__red,
+.button__red__out {
+    cursor: pointer;
+}
+
 .button__red {
     padding: 0px 25px 0px 25px;
     background: #B31942;
     color: white;
     border-radius: 40px;
     border: none;
-    cursor: pointer;
 }
 
 .button__red__out {
@@ -137,7 +154,6 @@ h5 {
     background: #b3194200;
     border-radius: 40px;
     border: 2px solid #b3194200;
-    cursor: pointer;
 }
 
 .button__red__out:hover {
@@ -147,4 +163,36 @@ h5 {
 .button__red h2,
 h3 {
     color: #ffffff !important;
+}
+
+
+/* Responsive adjustments for smaller screens */
+
+@media only screen and (max-width: 1200px) {
+    /* Adjustments for smaller screens can be added here */
+    .h1__large {
+        font-size: 4rem;
+    }
+    .h1__medium {
+        font-size: 3rem;
+    }
+    .h1__little {
+        font-size: 1.5rem;
+    }
+    .h1__extra {
+        font-size: 8rem;
+    }
+    .button__red {
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    p,
+    a,
+    span,
+    input,
+    textarea {
+        font-size: 1rem;
+    }
 }
