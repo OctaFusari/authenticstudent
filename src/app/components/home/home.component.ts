@@ -28,7 +28,9 @@ export class HomeComponent {
     let var__code = 0;
     let pos__sez__due = sezione__due.offsetTop;
     let pos__sez__tre = sezione__tre.offsetTop;
+
     window.onscroll = function () {
+
       if (window.scrollY >= (pos__sez__due - 300)) {
         if ((window.scrollY >= (opzione__uno.offsetTop - 300)) && (window.scrollY <= (opzione__due.offsetTop - 300))) {
           var__code = 0;

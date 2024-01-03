@@ -3,9 +3,10 @@
 }
 
 .sezione__uno {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr .5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". sezione__uno__sezione__uno . sezione__uno__sezione__due .";
     height: 100vh;
     background: url('../../../assets/immagini/cittamidnight.jpg');
     background-repeat: no-repeat;
@@ -13,12 +14,15 @@
 }
 
 .sezione__uno__sezione__uno {
-    width: 650px;
-    margin-right: 50px;
+    grid-area: sezione__uno__sezione__uno;
+    display: flex;
+    align-items: center;
 }
 
 .sezione__uno__sezione__due {
-    width: 400px;
+    grid-area: sezione__uno__sezione__due;
+    display: flex;
+    align-items: center;
 }
 
 .sezione__due {
@@ -35,12 +39,6 @@
 
 .sezione__due__desc p {
     width: 500px;
-}
-
-.sezione__uno__sezione__due {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .see__more__big {
@@ -146,4 +144,59 @@ textarea {
     width: 4cm;
     padding-left: 15px;
     margin: 15px 15px 15px 0;
+}
+
+.flexi__dreski {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone__vista {
+    display: none;
+}
+
+.desk__vista {
+    display: block;
+}
+
+@media screen and (max-width:1200px) {
+    .flexi__dreski {
+        display: block;
+    }
+    .phone__vista {
+        display: block;
+    }
+    .desk__vista {
+        display: none;
+    }
+    .sezione__due__card {
+        margin: 30px 0 30px 0;
+    }
+    .sezione__uno {
+        padding-top: 20vh;
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 0.2fr;
+        grid-template-rows: 300px 200px;
+        grid-template-areas: ". sezione__uno__sezione__uno ." ". sezione__uno__sezione__due .";
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sezione__due__desc {
+        width: 300px;
+    }
+    .sezione__due__desc p {
+        width: 300px;
+    }
+    .sezione__due__card {
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        padding: 10px 20px 10px 20px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    .form-section {
+        margin: 10px 0 10px 0;
+    }
 }

@@ -1,49 +1,56 @@
 <div class="container__esterno__generale">
     <div class="sezione__uno">
         <div class="sezione__uno__sezione__uno">
-            <h1 class="h1__large" style="color: #ffffff;">Ora è il momento di realizzare il tuo sogno.</h1>
+            <h1 class="h1__medium" style="color: #ffffff;">Ora è il momento di realizzare il tuo sogno</h1>
 
         </div>
         <div class="sezione__uno__sezione__due">
-            <div class="see__more__big">
+            <div class="see__more__big ">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff00" height="54" viewBox="0 -960 960 960" width="54"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
                 <h2 (click)="scroll(iscriviti)" style="color: #ffffff;">Iscriviti ora</h2>
             </div>
         </div>
     </div>
     <div class="sezione__due" #iscriviti>
-        <div class="sezione__due__desc">
-            <h1 class="h1__medium">Fai subito il primo passo.</h1>
-            <p>Compila il form qui accanto parlandoci un po' di te, dicci anche quale percorso accademico desideri intraprendere e noi ti guideremo passo a passo verso il tuo sogno qui in America.</p>
-            <div style="margin-top: 40px;">
+        <div class="flexi__dreski">
+            <div class="sezione__due__desc">
+                <h1 class="h1__medium">Fai subito il primo passo</h1>
+                <p>Compila il form qui accanto parlandoci un po' di te, dicci anche quale percorso accademico desideri intraprendere e noi ti guideremo passo a passo verso il tuo sogno qui in America.</p>
+                <div style="margin-top: 40px;" class="desk__vista">
+                    <h4 (click)="link__3()" style="cursor: pointer;">authenticstudent.it@gmail.com</h4>
+                    <h4>cellulare: +39 3333854818</h4>
+                </div>
+            </div>
+            <div class="sezione__due__card">
+                <form action="#" method="post">
+                    <div style="display:flex; width:100%">
+                        <div class="form-section">
+                            <input type="text" id="section1" name="section1" placeholder="Nome">
+                        </div>
+
+                        <div class="form-section">
+                            <input type="text" id="section2" name="section2" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-section">
+                        <input type="text" id="section3" name="section3" placeholder="Numero di telefono">
+                    </div>
+
+                    <div class="form-section">
+                        <textarea type="text" id="section4" name="section4" placeholder="Descrivici il percorso che vuoi fare"></textarea>
+                    </div>
+
+                    <div class="see__more">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+                        <h4>Invia form</h4>
+                    </div>
+                </form>
+            </div>
+            <div style="margin-top: 40px;" class="phone__vista">
                 <h4 (click)="link__3()" style="cursor: pointer;">authenticstudent.it@gmail.com</h4>
                 <h4>cellulare: +39 3333854818</h4>
             </div>
-        </div>
-        <div class="sezione__due__card">
-            <form action="#" method="post">
-                <div style="display:flex; width:100%">
-                    <div class="form-section">
-                        <input type="text" id="section1" name="section1" placeholder="Nome">
-                    </div>
 
-                    <div class="form-section">
-                        <input type="text" id="section2" name="section2" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-section">
-                    <input type="text" id="section3" name="section3" placeholder="Numero di telefono">
-                </div>
-
-                <div class="form-section">
-                    <textarea type="text" id="section4" name="section4" placeholder="Descrivici il percorso che vuoi fare"></textarea>
-                </div>
-
-                <div class="see__more">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="42" viewBox="0 -960 960 960" width="42"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-                    <h4>Invia form</h4>
-                </div>
-            </form>
         </div>
     </div>
 </div>

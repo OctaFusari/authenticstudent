@@ -52,6 +52,22 @@
     margin-top: 300px;
     top: 0;
     position: fixed;
+    z-index: -1;
+}
+
+#sezione__container {
+    z-index: 0;
+    margin: 0 100px 0 100px;
+}
+
+.sezione__architettura__interna__titolo {
+    width: 500px;
+}
+
+#sezione__cinque {
+    position: sticky;
+    z-index: 1;
+    padding: 0px 300px 0px 300px;
 }
 
 .see__more {
@@ -124,15 +140,11 @@
     margin: 15px 15px 15px 0;
 }
 
-#sezione__cinque {
-    padding: 0px 300px 0px 300px;
-}
-
 .sezione__cinque__contianer__interno {
     padding: 1vw;
     border-radius: 1.5em;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-    margin: 50px 0 100px 0;
+    margin: 50px 0 50px 0;
     padding: 30px 60px 30px 60px;
 }
 
@@ -141,10 +153,89 @@
 }
 
 .image__fondo {
-    height: 40vh;
+    margin-top: 200px;
+    height: 600px;
     flex-shrink: 0;
+    padding: 10vw 10vw 0 10vw;
     padding: 10vw;
     background: linear-gradient(to top, #ffffff 1%, #b3194273 99%), url('../../../assets/immagini/103846378_copia.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.image__fondo h1 {
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .sezione__architettura__interna__titolo {
+        width: 250px;
+    }
+    .sezione__architettura__interna h1 {
+        width: 250px;
+    }
+    .sezione__architettura {
+        display: flex;
+        justify-content: center;
+        margin: 100px 0 100px 0;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    #sezione__uno {
+        padding: 0 100px 0 100px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    #sezione__cinque {
+        padding: 0px 100px 0px 100px;
+    }
+    #sezione__sei {
+        margin: 100px 100px 200px 100px
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #sezione__uno {
+        padding: 0 50px 0 50px;
+    }
+    #sezione__container {
+        z-index: 0;
+        margin: 0 50px 0 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sezione__architettura__interna {
+        display: block;
+    }
+    #sezione__cinque {
+        padding: 0px 50px 0px 50px;
+    }
+    #sezione__sei {
+        margin: 100px 50px 200px 50px;
+    }
+    .image__fondo {
+        height: 700px;
+    }
+    .see__more__big {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #sezione__cinque {
+        padding: 0px 10px 0px 10px;
+    }
+    #sezione__sei {
+        margin: 100px 10px 200px 10px;
+    }
+    .sezione__cinque__contianer__interno {
+        padding: 1vw;
+        border-radius: 1.5em;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        margin: 40px 0 40px 0;
+        padding: 10px 20px 10px 20px;
+    }
 }

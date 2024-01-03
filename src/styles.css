@@ -161,7 +161,8 @@ h5 {
 }
 
 .button__red h2,
-h3 {
+.button__red h3,
+.button__red h4 {
     color: #ffffff !important;
 }
 
@@ -171,13 +172,15 @@ h3 {
 @media only screen and (max-width: 1200px) {
     /* Adjustments for smaller screens can be added here */
     .h1__large {
-        font-size: 4rem;
+        font-size: 3.2rem;
     }
     .h1__medium {
-        font-size: 3rem;
+        font-size: 2.3rem;
+        font-weight: 700 !important;
     }
     .h1__little {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 700 !important;
     }
     .h1__extra {
         font-size: 8rem;
@@ -194,5 +197,18 @@ h3 {
     input,
     textarea {
         font-size: 1rem;
+    }
+    h2,
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    h5 {
+        font-size: .8rem;
+        font-weight: 500;
     }
 }
