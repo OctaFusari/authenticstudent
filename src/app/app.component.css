@@ -8,6 +8,7 @@
     width: 100%;
     z-index: 1000;
     background-color: rgba(255, 255, 255, 0.267);
+    overflow-x: hidden !important;
 }
 
 .navbar div {
@@ -145,6 +146,7 @@
 
 .cd-nav {
     overflow-y: scroll;
+    overflow-x: hidden !important;
     /* overflow-y: scroll; */
     position: fixed;
     z-index: 1000;
@@ -180,6 +182,7 @@
     -webkit-transition: -webkit-transform 0.5s;
     -moz-transition: -moz-transform 0.5s;
     transition: transform 0.5s;
+    overflow-x: hidden !important;
 }
 
 .cd-nav-container {
@@ -187,6 +190,7 @@
     align-items: center;
     justify-content: center;
     /* Center items horizontally */
+    overflow-x: hidden !important;
 }
 
 .cd-navigation-wrapper h1 {
