@@ -8,7 +8,15 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class HomeComponent {
   constructor(private router: Router) { }
+  load = 0;
+
   ngOnInit(): void {
+
+    this.load = 0;
+    setTimeout(() => {
+      this.load = 1;
+    },2000);
+    
     this.router.events.subscribe((event:any) => {
       if (!(event instanceof NavigationEnd)) {
         return;
@@ -31,17 +39,20 @@ export class HomeComponent {
 
     window.onscroll = function () {
 
-      if (window.scrollY >= (pos__sez__due - 300)) {
-        if ((window.scrollY >= (opzione__uno.offsetTop - 300)) && (window.scrollY <= (opzione__due.offsetTop - 300))) {
+      if (window.scrollY >= (pos__sez__due + 300)) {
+        if ((window.scrollY >= (opzione__uno.offsetTop + 300)) && (window.scrollY <= (opzione__due.offsetTop + 300))) {
           var__code = 0;
+          console.log("entr uno")
         }
-        else if ((window.scrollY >= (opzione__due.offsetTop - 300)) && (window.scrollY <= (opzione__tre.offsetTop - 300))) {
+        else if ((window.scrollY >= (opzione__due.offsetTop + 300)) && (window.scrollY <= (opzione__tre.offsetTop + 300))) {
           var__code = 1;
+          console.log("entr due")
         }
-        else if ((window.scrollY >= (opzione__tre.offsetTop - 300)) && (window.scrollY <= (opzione__quattro.offsetTop - 300))) {
+        else if ((window.scrollY >= (opzione__tre.offsetTop + 300)) && (window.scrollY <= (opzione__quattro.offsetTop + 300))) {
           var__code = 2;
+          console.log("entr tre")
         }
-        else if (window.scrollY >= (opzione__quattro.offsetTop - 300)) {
+        else if (window.scrollY >= (opzione__quattro.offsetTop + 300)) {
           var__code = 3;
         }
 
@@ -69,14 +80,14 @@ export class HomeComponent {
           opzione__tre__menu.style.setProperty("color", "#08456e6b");
           opzione__quattro__menu.style.setProperty("color", "#08466E");
         }
-        if(window.scrollY >= (pos__sez__tre - 500)){
+        if(window.scrollY >= (pos__sez__tre)){
           opzione__uno__menu.style.setProperty("color", "#08456e00");
           opzione__due__menu.style.setProperty("color", "#08456e00");
           opzione__tre__menu.style.setProperty("color", "#08456e00");
           opzione__quattro__menu.style.setProperty("color", "#08456e00");
         }
       }
-      else if ((window.scrollY < pos__sez__due)) {
+      else if ((window.scrollY < (pos__sez__due+500))) {
         opzione__uno__menu.style.setProperty("color", "#08456e00");
         opzione__due__menu.style.setProperty("color", "#08456e00");
         opzione__tre__menu.style.setProperty("color", "#08456e00");

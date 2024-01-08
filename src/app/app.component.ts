@@ -20,7 +20,15 @@ export class AppComponent {
     window.location.href = "https://www.instagram.com/authenticstudent_it?igsh=cnZ3MHpvcHdld2N2";
   }
 
+  load = 0;
+
   ngOnInit(): void {
+
+    this.load = 0;
+    setTimeout(() => {
+      this.load = 1;
+    },2000);
+
     let sezione__quattro = document.getElementById('sezione__quattro') as HTMLElement;
     let menu__uno = document.getElementById('menu__uno') as HTMLElement;
     let menu__due = document.getElementById('menu__due') as HTMLElement;

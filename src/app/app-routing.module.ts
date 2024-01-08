@@ -14,7 +14,7 @@ import { TermsOfServiceComponent } from './components/policies/terms-of-service/
 import { LegalNoticeComponent } from './components/policies/legal-notice/legal-notice.component';
 import { RipetizioniComponent } from './components/ripetizioni/ripetizioni.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {path:"", component: HomeComponent},
   {path:"scuole-superiori", component: ScuoleSuperioriComponent},
   {path:"community-college", component: CommunityCollegeComponent},
@@ -28,6 +28,7 @@ const routes: Routes = [
   {path:"refund-policy", component: RefundPolicyComponent},
   {path:"terms-of-service", component: TermsOfServiceComponent},
   {path:"legal-notice", component: LegalNoticeComponent},
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({

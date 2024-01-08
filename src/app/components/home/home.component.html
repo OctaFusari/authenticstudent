@@ -1,4 +1,4 @@
-<div class="loading__page" style="display: none;">
+<div id="loading__page">
     <div class="lines__sup">
         <div class="line__1">
             <a style="margin-top:158px; margin-left: -10px;">Miami</a>
@@ -17,9 +17,9 @@
     display: flex;
     align-items: center;
     justify-content: center;">
-        <div>
-            <h1 class="h1__little logo">Authentic</h1>
-            <h1 class="h1__little logo">Student</h1>
+        <div class="logo">
+            <!-- Add your logo image or text here -->
+            <img routerLink="/" src="../../../assets/immagini/logoas2 (11).png" alt="Logo">
         </div>
     </div>
     <div class="lines__inf">
@@ -39,46 +39,46 @@
             <a style="margin-top:22px;margin-left: -10px;">Dallas</a>
         </div>
     </div>
-
 </div>
-<main>
+<main id="main__page">
+    <!--     <div class="scrorri__line">
+        <h3 class="rotate-text">Scorri per vedere di più</h3>
+    </div> -->
+    <div id="sezione__due__interno__uno">
+        <ul>
+            <li (click)="scroll(opzione__uno)" id="opzione__uno__menu">
+                Scuola superiore
+            </li>
+            <li (click)="scroll(opzione__due)" id="opzione__due__menu">
+                Community College
+            </li>
+            <li (click)="scroll(opzione__tre)" id="opzione__tre__menu">
+                University
+            </li>
+            <li (click)="scroll(opzione__quattro)" id="opzione__quattro__menu">
+                Master / Magistrale
+            </li>
+        </ul>
+    </div>
     <div class="superiore">
-        <div class="su__left">
-            <div class="su__left__1">
-                <h1 class="h1__large" style="margin-bottom: 0">Il tuo futuro</h1>
-                <h1 class="h1__large" style="margin-top: 0">La nostra </h1>
+        <div class="superiore__parallax__uno">
 
-            </div>
-            <div class="su__left__2">
-                <h2 style="color: #B31942;">
-                    Vivi il tuo sogno americano con noi
-                </h2>
-            </div>
-            <div class="su__left__3">
-                <button class="button__red__out">
-                <button (click)="scroll(chisiamo)" class="button__red">
-                    <h4 style="color: white !important;">Scopri di più</h4>
-                </button></button>
-            </div>
         </div>
-        <div class="su__left__phone">
-            <div class="su__left__1">
-                <h1 class="h1__medium" style="margin: 0">Il tuo futuro</h1>
-                <h1 class="h1__medium" style="margin: 0">La nostra</h1>
-                <h1 class="h1__medium" style="margin: 0">guida</h1>
+        <div class="superiore__parallax__due">
 
-            </div>
-            <div class="su__left__2">
-                <h3 style="color: #B31942;">
-                    Vivi il tuo sogno americano con noi
-                </h3>
-            </div>
-            <div class="su__left__3">
-                <button class="button__red__out">
-                <button (click)="scroll(chisiamo)" class="button__red">
-                    <h4 style="color: white !important;">Scopri di più</h4>
-                </button></button>
-            </div>
+        </div>
+        <div class="su__left__1 su__left">
+            <h1 class="h1__large" style="margin-bottom: 0;">Il tuo futuro</h1>
+            <h1 class="h1__large" style="margin-top: 0;">La nostra guida</h1>
+        </div>
+        <div class="su__left__2 su__left">
+            <h2 style="color: #B31942">
+                Vivi il tuo sogno americano con noi
+            </h2>
+        </div>
+        <div class="su__left__3">
+            <!-- <h2 (click)="scroll(chisiamo)" style="color: #B31942">Scopri ora</h2> -->
+            <div (click)="scroll(chisiamo)" class="scroll"></div>
         </div>
     </div>
     <div class="centro">
@@ -102,22 +102,6 @@
             </div>
         </div>
         <div id="sezione__due">
-            <div id="sezione__due__interno__uno">
-                <ul>
-                    <li (click)="scroll(opzione__uno)" id="opzione__uno__menu">
-                        Scuola superiore
-                    </li>
-                    <li (click)="scroll(opzione__due)" id="opzione__due__menu">
-                        Community College
-                    </li>
-                    <li (click)="scroll(opzione__tre)" id="opzione__tre__menu">
-                        University
-                    </li>
-                    <li (click)="scroll(opzione__quattro)" id="opzione__quattro__menu">
-                        Master / Magistrale
-                    </li>
-                </ul>
-            </div>
             <div class="sezione__due__interno__due">
                 <section id="opzione__uno" #opzione__uno>
                     <div class="sezione__due__interno__due__sezione__uno">

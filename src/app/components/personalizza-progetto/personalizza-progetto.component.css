@@ -1,5 +1,6 @@
 .container__esterno__generale {
     display: block !important;
+    overflow-x: hidden;
 }
 
 .sezione__uno {
@@ -83,6 +84,11 @@
     padding: 30px 60px 30px 60px;
     width: 500px;
     border-radius: 20px;
+}
+
+iframe {
+    width: 500px;
+    height: 600px
 }
 
 .form-section {
@@ -198,5 +204,9 @@ textarea {
     }
     .form-section {
         margin: 10px 0 10px 0;
+    }
+    iframe {
+        width: 300px;
+        height: 400px
     }
 }

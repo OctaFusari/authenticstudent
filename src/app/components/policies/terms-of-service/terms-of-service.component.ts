@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./terms-of-service.component.css']
 })
 export class TermsOfServiceComponent {
-
+  link__3(){
+    window.location.href = "mailto:${authenticstudent.it@gmail.com}";
+  }
 }

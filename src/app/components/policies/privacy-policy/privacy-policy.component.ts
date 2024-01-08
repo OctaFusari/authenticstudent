@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./privacy-policy.component.css']
 })
 export class PrivacyPolicyComponent {
-
+  link__3(){
+    window.location.href = "mailto:${authenticstudent.it@gmail.com}";
+  }
 }

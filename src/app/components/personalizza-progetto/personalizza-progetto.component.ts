@@ -32,4 +32,8 @@ scroll(el: HTMLElement) {
 link__3(){
   window.location.href = "mailto:${authenticstudent.it@gmail.com}";
 }
+
+  createmail(nome:any,mail:any, telefono:any, desc:any){
+    
+  }
 }

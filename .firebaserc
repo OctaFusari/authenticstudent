@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "authenticstudent-1d356": {
+      "hosting": {
+        "authenticstudent": [
+          "authenticstudent-1d356"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "authenticstudent-1d356"
+  }
+}

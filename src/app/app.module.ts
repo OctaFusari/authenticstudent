@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -16,6 +15,17 @@ import { TermsOfServiceComponent } from './components/policies/terms-of-service/
 import { LegalNoticeComponent } from './components/policies/legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './components/policies/privacy-policy/privacy-policy.component';
 import { RipetizioniComponent } from './components/ripetizioni/ripetizioni.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getAnalytics, provideAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
+import { initializeAppCheck, ReCaptchaEnterpriseProvider, provideAppCheck } from '@angular/fire/app-check';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getDatabase, provideDatabase } from '@angular/fire/database';
+import { getFunctions, provideFunctions } from '@angular/fire/functions';
+import { getMessaging, provideMessaging } from '@angular/fire/messaging';
+import { getPerformance, providePerformance } from '@angular/fire/performance';
+import { getStorage, provideStorage } from '@angular/fire/storage';
+import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
 
 @NgModule({
   declarations: [
@@ -37,9 +47,26 @@ import { RipetizioniComponent } from './components/ripetizioni/ripetizioni.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp({"projectId":"authenticstudent-1d356","appId":"1:982692498217:web:239773d25ba4f18528c538","storageBucket":"authenticstudent-1d356.appspot.com","apiKey":"AIzaSyBh_tzyVxIjsvZkoxjfF1AjxtrM61IIBWI","authDomain":"authenticstudent-1d356.firebaseapp.com","messagingSenderId":"982692498217","measurementId":"G-8XJVRQ8PE6"})),
+    provideAuth(() => getAuth()),
+    provideAnalytics(() => getAnalytics()),
+    // TODO get a reCAPTCHA Enterprise here https://console.cloud.google.com/security/recaptcha?project=_
+/*     provideAppCheck(() => {
+      const provider = new ReCaptchaEnterpriseProvider(  reCAPTCHA Enterprise site key  );
+      return initializeAppCheck(undefined, { provider, isTokenAutoRefreshEnabled: true });
+    }), */
+    provideFirestore(() => getFirestore()),
+    provideDatabase(() => getDatabase()),
+    provideFunctions(() => getFunctions()),
+    provideMessaging(() => getMessaging()),
+    providePerformance(() => getPerformance()),
+    provideStorage(() => getStorage()),
+    provideRemoteConfig(() => getRemoteConfig())
   ],
-  providers: [],
+  providers: [
+    ScreenTrackingService,
+    UserTrackingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
