@@ -28,6 +28,9 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { httpsCallableFromURL } from 'firebase/functions';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -52,6 +55,26 @@ import { HeaderComponent } from './components/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      {path:"", component:HomeComponent},
+      {path:"scuole-superiori", component: ScuoleSuperioriComponent},
+      {path:"community-college", component: CommunityCollegeComponent},
+      {path:"university", component: UniversitaComponent},
+      {path:"master", component: MasterComponent},
+      {path:"chi-siamo", component: ChiSiamoComponent},
+      {path:"iscrizione", component: PersonalizzaProgettoComponent},
+      {path:"testimonianze", component: TestimonianzeComponent},
+      {path:"ripetizioni", component: RipetizioniComponent},
+      {path:"privacy-policy", component: PrivacyPolicyComponent},
+      {path:"refund-policy", component: RefundPolicyComponent},
+      {path:"terms-of-service", component: TermsOfServiceComponent},
+      {path:"legal-notice", component: LegalNoticeComponent},
+      {path:"header", component: HeaderComponent},
+      {path:"footer", component: FooterComponent},
+      {path:"**", component:HomeComponent}
+    ]),
     provideFirebaseApp(() => initializeApp({"projectId":"authenticstudent-1d356","appId":"1:982692498217:web:239773d25ba4f18528c538","storageBucket":"authenticstudent-1d356.appspot.com","apiKey":"AIzaSyBh_tzyVxIjsvZkoxjfF1AjxtrM61IIBWI","authDomain":"authenticstudent-1d356.firebaseapp.com","messagingSenderId":"982692498217","measurementId":"G-8XJVRQ8PE6"})),
     provideAuth(() => getAuth()),
     provideAnalytics(() => getAnalytics()),
