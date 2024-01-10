@@ -1,18 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  template:`
-  <app-header></app-header>
-  <router-outlet></router-outlet>
-  <app-footer></app-footer>
-  `,
-/*   templateUrl: './app.component.html', */
-  styleUrls: ['./app.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class AppComponent {
-  title = 'authenticstudent';
-  
+export class HeaderComponent {
   octimal(){
     window.location.href = "https://octimal.it/";
   }

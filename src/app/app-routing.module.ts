@@ -13,9 +13,11 @@ import { RefundPolicyComponent } from './components/policies/refund-policy/refun
 import { TermsOfServiceComponent } from './components/policies/terms-of-service/terms-of-service.component';
 import { LegalNoticeComponent } from './components/policies/legal-notice/legal-notice.component';
 import { RipetizioniComponent } from './components/ripetizioni/ripetizioni.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 export const routes: Routes = [
-  {path:"", component: HomeComponent},
+  {path:"", component:HomeComponent},
   {path:"scuole-superiori", component: ScuoleSuperioriComponent},
   {path:"community-college", component: CommunityCollegeComponent},
   {path:"university", component: UniversitaComponent},
@@ -28,7 +30,8 @@ export const routes: Routes = [
   {path:"refund-policy", component: RefundPolicyComponent},
   {path:"terms-of-service", component: TermsOfServiceComponent},
   {path:"legal-notice", component: LegalNoticeComponent},
-  {path: '**', redirectTo: ''}
+  {path:"header", component: HeaderComponent},
+  {path:"footer", component: FooterComponent}
 ];
 
 @NgModule({

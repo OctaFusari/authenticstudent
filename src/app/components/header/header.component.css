@@ -1,0 +1,213 @@
+#navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0);
+    overflow-x: hidden !important;
+}
+
+#navbar div {
+    width: 8cm;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu .active {
+    text-decoration: underline;
+}
+
+.menu {
+    margin-left: 10vw;
+    display: block;
+}
+
+.menu__due {
+    display: none;
+}
+
+.nav__contatti {
+    margin-right: 10vw;
+}
+
+.cd__interno__secondario svg:hover path {
+    fill: #08456ea6 !important;
+}
+
+.contact__phone {
+    display: none;
+}
+
+.cd-nav-trigger-inside_profile {
+    margin: 2vw 10vw 0vw 10vw;
+}
+
+.cd-navigation-wrapper {
+    margin: 0 0 0vw 10vw;
+}
+
+.cd-navigation-wrapper div {
+    margin-bottom: 40px;
+}
+
+.cd-nav {
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    /* overflow-y: scroll; */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    visibility: hidden;
+    -webkit-transition: visibility 0s 0.7s;
+    -moz-transition: visibility 0s 0.7s;
+    transition: visibility 0s 0.7s;
+    -webkit-transform: translateX(110%);
+    -moz-transform: translateX(110%);
+    -ms-transform: translateX(110%);
+    -o-transform: translateX(110%);
+    transform: translateX(110%);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.navigation-is-open .cd-nav {
+    visibility: visible;
+    -webkit-transition: visibility 0s 0.7s;
+    -moz-transition: visibility 0s 0.7s;
+    transition: visibility 0s 0.7s;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    transition: transform 0.5s;
+    overflow-x: hidden !important;
+}
+
+.cd-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center items horizontally */
+    overflow-x: hidden !important;
+}
+
+.cd-navigation-wrapper h1 {
+    cursor: pointer;
+}
+
+.cd-navigation-wrapper h1:hover {
+    color: #B31942 !important;
+}
+
+.cd-nav-container img {
+    width: 600px;
+    opacity: 0.7;
+}
+
+.cd__interno__secondario div {
+    position: absolute;
+    z-index: 1001;
+    margin-left: -60px
+}
+
+
+/* Your existing CSS */
+
+@media only screen and (max-width: 1600px) {
+    .cd-nav-container {
+        margin-top: -40px;
+    }
+    .cd-navigation-wrapper {
+        margin: 0 -80px 0vw 8vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #navbar {
+        padding: 10px;
+    }
+    .menu {
+        margin-left: 5vw;
+    }
+    .nav__contatti {
+        margin-right: 5vw;
+    }
+    .footer-columns div {
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .cd__interno__secondario {
+        margin-top: -150px;
+    }
+    .cd-nav-container img {
+        width: 300px;
+        opacity: 0.7;
+    }
+    .cd-nav-container {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .cd-nav-trigger-inside_profile {
+        text-align: right;
+    }
+    .contact__phone {
+        display: block;
+    }
+    .cd-nav-container {
+        display: block;
+        margin-top: -40px;
+    }
+    .cd__interno__secondario {
+        display: none;
+    }
+    .nav__contatti {
+        display: none;
+    }
+    #navbar div {
+        width: fit-content;
+    }
+    #navbar {
+        padding: 10px 0 10px 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .logo img {
+        margin-left: 20px;
+        height: 60px;
+    }
+    .menu {
+        display: none;
+    }
+    .menu__due {
+        display: block;
+        margin-right: 30px;
+    }
+}

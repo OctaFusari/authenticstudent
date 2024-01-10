@@ -26,6 +26,8 @@ import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-confi
     TermsOfServiceComponent,
     LegalNoticeComponent,
     PrivacyPolicyComponent,
-    RipetizioniComponent
+    RipetizioniComponent,
+    FooterComponent,
+    HeaderComponent
 
   ],
   imports: [

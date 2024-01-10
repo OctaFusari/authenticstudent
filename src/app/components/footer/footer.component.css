@@ -1,0 +1,123 @@
+#sezione__quattro {
+    min-height: 100vh;
+    z-index: 99;
+    position: sticky;
+    background-color: white;
+}
+
+.sezione__quattro__up svg:hover path {
+    fill: #b31942b7 !important;
+}
+
+.sezione__quattro__up {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer-logo footer-columns-one footer-columns-two";
+    padding: 200px 300px 120px 300px;
+}
+
+.sezione__quattro__up h1 {
+    margin: 0;
+}
+
+.footer-columns div {
+    margin: 10px 0 20px 0;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    grid-area: footer-logo;
+}
+
+.footer-columns-one {
+    grid-area: footer-columns-one;
+}
+
+.footer-columns-two {
+    grid-area: footer-columns-two;
+}
+
+.footer-logo-sec-one {
+    display: block;
+}
+
+.footer-logo-sec-two {
+    display: none;
+}
+
+.footer-logo svg {
+    height: 48px !important;
+    width: 48px !important;
+    margin: 20px 30px 20px 0px;
+    cursor: pointer
+}
+
+.divOcti {
+    display: grid;
+    width: 100%;
+    height: 19px;
+    align-items: center;
+    grid-template-columns: 300px 200px 4fr;
+    padding-bottom: 80px;
+}
+
+.dO_interno {
+    width: 100%;
+    background-color: #08466E;
+    /*  background-color: #08466E; */
+    height: 2px;
+    flex-shrink: 0;
+    transition-duration: .2s;
+}
+
+.divOcti h5 {
+    font-family: "Montserrat, italic" !important;
+}
+
+@media only screen and (max-width: 1600px) {
+    .sezione__quattro__up {
+        padding: 200px 100px 120px 100px;
+    }
+    .divOcti {
+        grid-template-columns: 100px 200px 4fr;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .sezione__quattro__up {
+        padding: 150px 50px 80px 50px;
+        grid-template-columns: 1fr;
+    }
+    .sezione__quattro__up h1 {
+        margin-bottom: 20px;
+    }
+    .footer-columns div {
+        margin: 10px 0 10px 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-logo svg {
+        height: 24px !important;
+        width: 24px !important;
+    }
+    .sezione__quattro__up {
+        padding: 120px 20px 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas: "footer-logo footer-logo" "footer-columns-one footer-columns-two";
+    }
+    .footer-logo-sec-one {
+        display: none;
+    }
+    .footer-logo-sec-two {
+        display: block;
+    }
+    .logo img {
+        margin-left: 20px;
+        height: 60px;
+    }
+}
