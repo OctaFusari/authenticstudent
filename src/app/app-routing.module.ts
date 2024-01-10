@@ -12,7 +12,7 @@ import { PrivacyPolicyComponent } from './components/policies/privacy-policy/pri
 import { RefundPolicyComponent } from './components/policies/refund-policy/refund-policy.component';
 import { TermsOfServiceComponent } from './components/policies/terms-of-service/terms-of-service.component';
 import { LegalNoticeComponent } from './components/policies/legal-notice/legal-notice.component';
-import { RipetizioniComponent } from './components/ripetizioni/ripetizioni.component';
+import { RipetizioniComponent } from './ripetizioni/ripetizioni.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -31,7 +31,8 @@ export const routes: Routes = [
   {path:"terms-of-service", component: TermsOfServiceComponent},
   {path:"legal-notice", component: LegalNoticeComponent},
   {path:"header", component: HeaderComponent},
-  {path:"footer", component: FooterComponent}
+  {path:"footer", component: FooterComponent},
+  {path:"**", component:HomeComponent}
 ];
 
 @NgModule({
