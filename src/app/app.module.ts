@@ -31,6 +31,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { httpsCallableFromURL } from 'firebase/functions';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+		HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       {path:"", component:HomeComponent},
