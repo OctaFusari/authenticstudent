@@ -14,7 +14,7 @@ import { RefundPolicyComponent } from './components/policies/refund-policy/refun
 import { TermsOfServiceComponent } from './components/policies/terms-of-service/terms-of-service.component';
 import { LegalNoticeComponent } from './components/policies/legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './components/policies/privacy-policy/privacy-policy.component';
-import { RipetizioniComponent } from './ripetizioni/ripetizioni.component';
+import { RipetizioniComponent } from './components/ripetizioni/ripetizioni.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getAnalytics, provideAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';

@@ -25,7 +25,7 @@
     height: 1000px;
     width: 1000px;
     border-radius: 1000px;
-    background: url("../../assets/immagini/eliott-reyna-jCEpN62oWL4-unsplash.jpg"), rgb(255, 255, 255) 90% / cover no-repeat;
+    background: url("../../../assets/immagini/eliott-reyna-jCEpN62oWL4-unsplash.jpg"), rgb(255, 255, 255) 90% / cover no-repeat;
     background-position: center;
     background-size: cover;
 }
