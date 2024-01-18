@@ -23,6 +23,7 @@
     background: url('../../../assets/immagini/profili/IMG_678355870D1D-1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
     border-radius: 300px;
     height: 300px;
     width: 300px;
@@ -35,6 +36,7 @@
     background: url('../../../assets/immagini/profili/IMG_4359.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left;
     border-radius: 300px;
     margin-top: -80px;
 }
@@ -176,5 +178,20 @@
         height: 200px;
         width: 200px;
         margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sezione__uno__sezione__due__img__uno {
+        margin-top: 10px;
+        height: 160px;
+        width: 160px;
+        margin-left: 0px;
+    }
+    .sezione__uno__sezione__due__img__due {
+        height: 160px;
+        width: 160px;
+        margin-top: -10px;
+        margin-left: -30px;
     }
 }
